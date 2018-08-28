@@ -27,7 +27,8 @@ DEBUG = True
 #DEBUG = False
 
 ALLOWED_HOSTS = ['irsl.ss.ncu.edu.tw',
-		]
+				 'localhost',
+				]
 
 
 # Application definition
