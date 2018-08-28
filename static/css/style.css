@@ -1,0 +1,582 @@
+@font-face {
+    font-family: NEO;
+    src: url(/static/font/NEOTERICcBOLD.ttf);
+}
+
+@font-face {
+    font-family: SafetyM;
+    src: url(/static/font/SafetyMedium.otf);
+}
+
+@font-face {
+    font-family: GudeaR;
+    src: url(/static/font/Gudea-Regular.ttf);
+}
+
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, "微軟正黑體", "微软雅黑", sans-serif;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+
+button:focus {outline:0;}
+
+
+
+h2, h3, h4, h5{
+    font-weight: bold;
+}
+
+h4 {
+    padding-bottom: 10px;
+}
+
+a {
+    color: darkcyan;
+}
+
+a:hover {
+    text-decoration: none;
+    color: darkslategray;    
+}
+
+a:visited { 
+    color: darkslategray;
+}
+
+
+
+.jyliu p {
+    font-weight: bold;
+}
+
+hr.s2{
+
+    border: 0;
+
+    height: 1px;
+
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+
+}
+
+
+
+hr.s3{
+
+    border: 0;
+
+    height: 1px;
+
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+
+}
+
+
+
+.navbar .bg-faded {
+    background-color: 1;
+}
+
+
+
+.navbar .container{
+    width: 80vw;
+}
+
+
+
+.navbar-brand{
+    position: relative;
+    padding: 0;
+}
+
+
+
+.navbar-brand img{
+    position: relative;
+    top: -3px;
+    height: 40px;
+}
+
+
+
+.nav-link{
+
+    font-family: "GudeaR" !important;
+
+}
+
+
+
+.navbar #navbarNav {
+
+    color: black;    
+
+    text-align: center;    
+
+    font-size: 17px;
+
+    font-weight: bold;    
+
+}
+
+
+
+.navbar .navbar-toggler {
+    border: none;
+    padding-top: 4px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 25px;
+}    
+
+
+
+.jumbotron {       
+
+    overflow: hidden;
+
+	background-size: cover;
+
+    padding: 0;   
+
+}
+
+
+
+.sm-bg, .lg-bg {    
+
+    position: absolute;    
+
+    left: 0;
+
+    width: 100%;
+
+}
+
+
+
+.cover {    
+
+    height: 100vh;
+
+}
+
+
+
+.cover .sm-bg {    
+
+    height: 100%;
+
+}
+
+
+
+.cover .lg-bg {
+
+    height: 100%;
+
+}
+
+
+
+.cover h1 {    
+
+	color: #FFF;
+
+	font-family: "SafetyM";
+
+	font-size: 600%;	
+
+    font-weight: bold;    
+
+    right: 0px;
+
+    padding-top: 40vh;
+
+}
+
+
+
+.cover h2 {    
+
+	color: #FFF;	
+    
+	font-family: "GudeaR";
+
+	font-size: 200%;
+
+    font-weight: bold;  
+
+    right: 0px;
+
+    width: 60vw;
+
+    text-align: center;
+
+    margin: 0 auto;
+
+    padding-top: 0px;
+
+    padding-bottom: 100px;
+
+}
+
+
+
+.headlines {    
+
+    position:relative;    
+
+    font-family: "GudeaR";
+
+    font-size: 250%;
+
+    text-align:center;
+
+    z-index:2;    
+
+}
+
+
+
+.text-line {
+
+    margin:0;padding:0 10px;
+
+    background:#fff;
+
+    display:inline-block;
+
+}
+
+
+
+.headlines:after{
+
+    content:"";
+
+    position:absolute;
+
+    top:50%;
+
+    left:0;
+
+    right:0;
+
+    border-top:solid 1px black;
+
+    z-index:-1;
+
+}
+
+
+
+.header{
+
+    height: 280px;
+
+}
+
+
+
+.header .sm-bg {    
+
+    height: 280px;}
+
+
+
+.header .lg-bg {
+
+    height: 280px;
+
+}
+
+
+
+.header h2{
+
+	font-family: "NEO";    
+
+    font-size: 350%;    
+
+    font-weight: bold;
+
+    color: #FFF;
+
+    padding-top: 130px;
+
+    text-align: center;    
+
+}
+
+
+
+.content img{
+
+    max-width: 100%;
+
+}
+
+table{
+
+    width: 100%;    
+
+    border-collapse: collapse;
+
+}
+
+table td{
+
+    vertical-align: top;
+
+    line-height: 3;    
+
+}
+
+table tr:hover{
+
+    background-color:#f5f5f5
+
+}
+
+.phd_name{
+    width: 300px;
+}
+
+.phd_country{
+    width: 150px;
+}
+
+.graduate_name{    
+    width: 100px;
+}
+
+.graduate_year{
+    width: 250px;
+}
+
+.course_head{
+    width: 150px;
+}
+
+.con-td1 {
+    width: 22%;
+    padding-right: 20px;
+}
+
+.con-td2 {
+    width: 40%;
+    padding-right: 20px;
+}
+
+.img-thumbnail {
+
+    width: 20vw;
+
+    height: auto;    
+
+}
+
+.row-link a .link-name{
+    color: black;
+    font-size: 120%;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    visibility: hidden;
+}
+
+.row-link a .cover{    
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    visibility: hidden
+}
+
+.row-link a:hover .cover{
+    visibility: visible;
+}
+
+.row-link a:hover .link-name{
+    visibility: visible;
+}
+
+.footer {
+    background-color: #EEE;
+    padding-bottom: 20px;
+    font-size: 14px;
+    min-height: 15vh;
+}
+
+.hideme {
+    opacity: 0;
+}
+
+.cover-fade {
+    animation:fin 2.5s;
+}
+
+.header-fade {
+    animation:fin 1s;
+}
+
+.header-fade h2{
+    position:relative;
+    animation:animatetop 1.5s;
+}
+
+@keyframes animatetop {
+    from{bottom:100px;opacity:0} 
+    to{bottom:0;opacity:1}
+}
+
+.content-fade {
+    animation:fin 2s;
+}
+
+.footer-fade {
+    animation:fin 1s;
+}
+
+.fadein {    
+    animation:fin 1s;
+    opacity: 1 !important;
+}
+
+.fadeout {    
+    animation:fout 1s;
+    opacity: 0 !important;
+}
+
+@keyframes fin {
+    from{opacity:0} 
+    to{opacity:1}
+}
+
+@keyframes fout {
+    from{opacity:1} 
+    to{opacity:0}
+}
+
+@media only screen and (max-width : 1200px) and (min-width : 992px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .navbar .container {
+        width: 100%;
+    }   
+
+}
+
+@media only screen and (max-width : 992px){
+    .container {
+        width: 100%;
+    }
+
+    .navbar .container {
+        width: 100%;
+    }
+
+    .cover h1 {    
+        font-size: 400%;
+    }
+
+    .img-thumbnail {
+        width: 30vw;
+        height: auto;    
+    }     
+    .footer{
+        font-size: 8px;
+        padding-bottom: 20px;
+    }    
+}
+
+@media only screen and (max-width : 768px) {
+
+    h3 {
+        font-size: 120%;
+    }
+    
+    h4 {
+        font-size: 110%;        
+    }
+    
+    p {
+        font-size: 80%;    
+    }
+    
+    td {
+        font-size: 80%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .navbar-brand img {
+        height: 25px;
+    }    
+
+    .cover h1 {    
+        font-size: 300%;
+    }
+
+    .cover h2 {    
+        font-size: 100%;	
+    } 
+    
+    .headlines {    
+        font-size: 180%;
+    }
+    
+    .header {
+        height: 200px;
+    }
+    
+    .header .sm-bg {
+        height: 200px;
+    }
+    
+    .header .lg-bg {
+        height: 200px;
+    }    
+
+    .header h2 {
+        padding-top: 90px;
+        font-size: 250%;
+    }
+    
+    .member td {
+        border-bottom: solid;
+        border-width: 1px;
+        border-color: #CCC;
+        line-height: 2;
+    }
+
+    .conf td {
+        border-bottom: solid;
+        border-width: 1px;
+        border-color: #CCC;
+        line-height: 2;
+    }    
+
+    .img-thumbnail {
+        width: 300px;   
+        height: auto;
+    }     
+}
+

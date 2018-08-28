@@ -1,0 +1,245 @@
+{% extends 'base.html' %}
+
+{% block head_title %}
+	Member - IRSL
+{% endblock %}
+
+{% block head_meta %}
+        <meta property="og:title" content="Member - IRSL"/>
+        <meta property="og:title" content="實驗室成員 - IRSL" />
+        <meta property="og:url" content="http://irsl.ss.ncu.edu.tw/member/"/>
+{% endblock %}	  
+
+{% block member_state %}
+	<li class="nav-item active">
+{% endblock %}        
+	  
+{% block banner_title %}
+	Member
+{% endblock %}
+
+{% block body_content %}
+        <div class="content-fade container member mb-5">
+            <div class="hideme jyliu yliu row hidden-md-down">
+                <div class="col-lg-4 col-md-12 align-self-left pb-5">
+                    <img src="/static/images/jyliu.png" width=270px>
+                </div>
+                <div class="col-auto align-self-left pb-5">
+                    <h4> 劉正彥(JANN-YENQ TIGER LIU) </h4>
+                    <p> PhD, Physics Dept, Utah State University </p>
+                    <p> Ionospheric Physics  </p>
+                    <p> Room 816 (8th floor), Science Building 4, NCU   </p>
+                    <p> (03)4227151~65763  </p>
+                    <p> <a href="mailto:jyliu@jupiter.ss.ncu.edu.tw">jyliu@jupiter.ss.ncu.edu.tw</a>  </p>
+                    <p> <a href={{cv.cv.url}} target="_blank">Curriculum Vitae</a></p>
+                </div>
+            </div>
+            <div class="hideme jyliu row hidden-lg-up text-center">
+                <div class="col pb-5">
+                    <h4> 劉正彥(JANN-YENQ TIGER LIU) </h4>   
+                    <br>
+                    <img src="/static/images/jyliu.png" width=270px>
+                </div>
+            </div>
+            <div class="jyliu row hidden-lg-up text-center">                
+                <div class="col pb-5">
+                    <p> PhD, Physics Dept, Utah State University </p>
+                    <p> Ionospheric Physics  </p>
+                    <p> Room 816 (8th floor), Science Building 4, NCU   </p>
+                    <p> (03)4227151~65763  </p>
+                    <p> <a href="mailto:jyliu@jupiter.ss.ncu.edu.tw">jyliu@jupiter.ss.ncu.edu.tw</a>  </p>
+                    <p> <a href={{cv.cv.url}} target="_blank">Curriculum Vitae</a></p>
+                </div>
+            </div>            
+            <br><br>            
+            <div class="hideme duty row hidden-lg-down">
+                <div class="col align-self-left">
+                    <h4>博士後研究(Postdoctoral)</h4>
+			  {% for mpd in mpds %}
+			  	<p><a href="mailto:{{mpd.email}}">Dr. {{mpd.english}} {{mpd.chinese}}</a></p>
+			  {% endfor %}
+                </div>
+                <div class="col align-self-left">
+                    <h4>專任助理(Full-time assistant)</h4>
+			  {% for mfa in mfas %}
+			  	<p><a href="mailto:{{mfa.email}}">{{mfa.english}} {{mfa.chinese}}</a></p>
+			  {% endfor %}
+                </div>
+                <div class="col align-self-left">
+                    <h4>博士班(PhD course)</h4>
+			  <p>
+			  	{% for mps in mpss %}
+			  	    <a href="mailto:{{mps.email}}">{{mps.chinese}}</a>&emsp;
+			  	{% endfor %}
+			  </p>
+                    <h4>碩士班(Master course)</h4>
+			  <p>
+			  	{% for mms in mmss %}
+			  	    <a href="mailto:{{mms.email}}">{{mms.chinese}}</a>&emsp;
+			  	{% endfor %}
+			  </p>
+                </div>
+            </div>
+            <div class="hideme duty row hidden-sm-down hidden-xl-up">
+                <div class="col align-self-left">
+                    <h4>博士後研究(Postdoctoral)</h4>
+			  {% for mpd in mpds %}
+			  	<p><a href="mailto:{{mpd.email}}">Dr. {{mpd.english}} {{mpd.chinese}}</a></p>
+			  {% endfor %}
+                    <br>
+                </div>                 
+                <div class="col align-self-left">
+     			  <h4>專任助理(Full-time assistant)</h4>
+			  {% for mfa in mfas %}
+			  	<p><a href="mailto:{{mfa.email}}">{{mfa.english}} {{mfa.chinese}}</a></p>
+			  {% endfor %}
+                </div>                
+            </div> 
+            <div class="hideme duty row hidden-sm-down hidden-xl-up">
+                <div class="col align-self-left">
+                    <h4>博士班(PhD course)</h4>
+			  <p>
+			  	{% for mps in mpss %}
+			  	    <a href="mailto:{{mps.email}}">{{mps.chinese}}</a>&emsp;
+			  	{% endfor %}
+			  </p>
+                </div>                 
+                <div class="col align-self-left">
+                    <h4>碩士班(Master course)</h4>
+			  <p>
+			  	{% for mms in mmss %}
+			  	    <a href="mailto:{{mms.email}}">{{mms.chinese}}</a>&emsp;
+			  	{% endfor %}
+			  </p>
+                </div>                
+            </div>
+            <div class="hideme duty row hidden-md-up text-center">
+                <div class="col align-self-left">
+                    <h4>博士後研究(Postdoctoral)</h4>
+			  {% for mpd in mpds %}
+			  	<p><a href="mailto:{{mpd.email}}">Dr. {{mpd.english}} {{mpd.chinese}}</a></p>
+			  {% endfor %}
+                    <br>
+                    <h4>專任助理(Full-time assistant)</h4>
+			  {% for mfa in mfas %}
+			  	<p><a href="mailto:{{mfa.email}}">{{mfa.english}} {{mfa.chinese}}</a></p>
+			  {% endfor %}
+                    <br>
+                    <h4>博士班(PhD course)</h4>
+			  <p>
+			  	{% for mps in mpss %}
+			  	    <a href="mailto:{{mps.email}}">{{mps.chinese}}</a>&emsp;
+			  	{% endfor %}
+			  </p>
+                    <h4>碩士班(Master course)</h4>
+			  <p>
+			  	{% for mms in mmss %}
+			  	    <a href="mailto:{{mms.email}}">{{mms.chinese}}</a>&emsp;
+			  	{% endfor %}
+			  </p>
+                    <br>
+                </div>                
+            </div>       
+            <br><br>
+            <div class="hideme vp row hidden-sm-down">
+                <div class="col align-self-left">
+                    <h4>歷年客座教授(Visiting Proffesor)</h4>
+                    <table class="PhD_table">
+			  	{% for pvp in pvps %}
+                        <tr class="hideme"><td class="PhD_name">Dr. {{pvp.english}} {{pvp.chinese}} </td>
+                            <td class="PhD_country">{{pvp.nation}}</td>
+                            <td>{{pvp.start}}~{{pvp.end}}</td></tr>
+			  	{% endfor %}
+                    </table>                    
+                    <br>
+                </div>
+            </div>                    
+            <div class="hideme pd row hidden-sm-down">
+                <div class="col align-self-left">
+                    <h4>歷年博士後研究(Postdoctoral) </h4>
+                    <table class="PhD_table">
+			  	{% for ppd in ppds %}
+                        <tr class="hideme"><td class="PhD_name">Dr. {{ppd.english}} {{ppd.chinese}} </td>
+                            <td class="PhD_country">{{ppd.nation}}</td>
+                            <td>{{ppd.start}}~{{ppd.end}}</td></tr>
+			  	{% endfor %}
+                    </table>
+			  <br>
+                </div>
+            </div>        
+            <div class="st row hidden-sm-down">
+                <div class="col align-self-left">
+                    <h4 class="hideme">歷年畢業學生(Graduate Student)</h4>                    
+                    <br>
+                    <h5 class="hideme">博士 Doctor</h5>
+                    <table class="hideme graduate_table">
+			  	{% for gpd in gpds %}
+				<tr class="hideme"><td class="graduate_name"> {{gpd.chinese}} </td>
+                            <td class="graduate_year"> {{gpd.start}}~{{gpd.end}} </td>
+                            <td> {{gpd.title}} </td></tr> 
+			  	{% endfor %}
+                    </table>
+                    <br>
+                    <h5 class="hideme">碩士 Master</h5>
+                    <table class="hideme graduate_table">
+			  	{% for gmd in gmds %}
+				<tr class="hideme"><td class="graduate_name"> {{gmd.chinese}} </td>
+                            <td class="graduate_year"> {{gmd.start}}~{{gmd.end}} </td>
+                            <td> {{gmd.title}} </td></tr> 
+			  	{% endfor %}
+                    </table>
+                </div>
+            </div>
+            
+            <div class="hideme vp row text-center hidden-md-up">
+                <div class="col align-self-left">
+                    <h4>歷年客座教授(Visiting Proffesor)</h4>
+                    <table class="PhD_table text-center">
+			  	{% for pvp in pvps %}
+                        <tr class="hideme"><td class="PhD_name">Dr. {{pvp.english}} {{pvp.chinese}} <br>
+                            {{pvp.nation}} <br>
+                            {{pvp.start}}~{{pvp.end}} <br></tr>
+			  	{% endfor %}
+                    </table>                    
+                    <br>
+                </div>
+            </div>
+            <div class="hideme pd row text-center hidden-md-up">
+                <div class="col align-self-left">
+                    <h4>歷年博士後研究(Postdoctoral) </h4>
+                    <table class="PhD_table text-center">
+			  	{% for ppd in ppds %}
+                        <tr class="hideme"><td class="PhD_name">Dr. {{ppd.english}} {{ppd.chinese}} <br>
+                            {{ppd.nation}} <br>
+                            {{ppd.start}}~{{ppd.end}} <br></tr>
+			  	{% endfor %}
+                    </table>
+			  <br>
+                </div>
+            </div>        
+            <div class="st row text-center hidden-md-up">
+                <div class="col align-self-left">
+                    <h4 class="hideme">歷年畢業學生(Graduate Student)</h4>
+
+                    <br>
+                    <h5 class="hideme">博士 Doctor</h5>
+                    <table class="hideme graduate_table text-center">
+			  	{% for gpd in gpds %}
+				<tr class="hideme"><td class="graduate_name"> {{gpd.chinese}} <br>
+                            {{gpd.start}}~{{gpd.end}} <br>
+                            {{gpd.title}} <br></tr> 
+			  	{% endfor %}
+                    </table>
+                    <br>
+                    <h5 class="hideme">碩士 Master</h5>
+                    <table class="hideme graduate_table text-center">
+			  	{% for gmd in gmds %}
+				<tr class="hideme"><td class="graduate_name"> {{gmd.chinese}} <br>
+                            {{gmd.start}}~{{gmd.end}} <br>
+                            {{gmd.title}} <br></tr> 
+			  	{% endfor %}
+                    </table>
+                </div>
+            </div>
+        </div>    
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block head_title %}       
+	  News - IRSL
+{% endblock %}
+
+{% block head_meta %}
+        <meta property="og:title" content="News - IRSL"/>
+        <meta property="og:title" content="最新消息 - IRSL" />
+        <meta property="og:url" content="http://irsl.ss.ncu.edu.tw/news/" />
+{% endblock %}
+       
+	  
+{% block news_state%}
+    <li class="nav-item active">
+{% endblock%}
+
+{% block banner_title %} News {% endblock%}
+
+{% block body_content %}	  
+        <div class="content-fade container mb-5">
+            <div class="row">
+                <div class="col align-self-center text-left">
+                    {% for news in newss %}			  
+			<div class="hideme">
+                        <p>{{news.title}}</p>
+                        <p>{{news.date}}</p>                        
+                        <p>{{news.content}} 
+				{% if news.more != '' %}
+			          ...<a href={{news.more}} target="_blank"><strong> More Info </strong></a></p>
+				{% endif %}
+                        <hr class="s1"> <br>
+			</div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+{% endblock %}

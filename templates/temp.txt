@@ -1,0 +1,218 @@
+<ppp><p>Training Session
+<ppp><p>6–10 November 2017 
+<ppp><p>SUNDAY (5 Nov.): 
+<ppp><p>18:30-21:00 Ice Breaker 
+<ppp><p>MONDAY (6 Nov.): 
+<ppp><p>08.15-09:00 Registration
+<ppp><p>09:00-09:30 Opening
+<ppp><p>09:30-10:00 Ionosphere-An introduction (B. Reinisch)
+<ppp><p>10:00-10:30 Coffee/Tea
+<ppp><p>10:30-11:30 IRI-Introduction and open problems (D. Bilitza) 
+<ppp><p>11:30-12:00 IRIweb and related services (D. Bilitza)
+<ppp><p>12:00-14:00 Lunch
+<ppp><p>14:00-14:30 Forming teams and assigning research tasks 
+<ppp><p>14:30-15:30 Team work 
+<ppp><p>15:30-16:00 Coffee/Tea
+<ppp><p>16:00-17:30 Team work 
+<ppp><p>TUESDAY (7 Nov.): 
+<ppp><p>09:00-10:00 Ionsonde measurements (B. Reinisch)
+<ppp><p>10:00-10:30 Coffee/Tea
+<ppp><p>10:30-11:30 Real-Time IRI (I. Galkin)
+<ppp><p>11:30-12:30 Overview FORMOSAT-3/COSMIC and FORMOSAT-7/COSMIC-2 (J.-Y. Liu)
+<ppp><p>12:30-14:00 Lunch
+<ppp><p>14:00-14:30 Access to ionosonde data (GIRO) and IRTAM (I. Galkin)
+<ppp><p>14:30-15:30 Team work 
+<ppp><p>15:30-16:00 Coffee/Tea
+<ppp><p>16:00-17:30 Team work 
+<ppp><p>WEDNESDAY (8 Nov.): 
+<ppp><p>09:00-10:00 GNSS data and ionospheric studies (A. Krankowski)
+<ppp><p>10:00-10:30 Coffee/Tea
+<ppp><p>10:30-11:30 COSMIC/GNSS ionospheric studies (Charles Lin)
+<ppp><p>11:30-12:00 Plasmasphere modelling (S. Watanabe)
+<ppp><p>12:00-14:00 Lunch
+<ppp><p>14:00-14:30 Access to GNSS data (A. Krankowski)
+<ppp><p>14:30-15:30 Team work 
+<ppp><p>15:30-16:00 Coffee/Tea
+<ppp><p>16:00-17:30 Team work
+<ppp><p>THURSDAY (9 Nov.): 
+<ppp><p>09:00 - 10:00 Scintillations (C. Rino)
+<ppp><p>10:00-10:30 Coffee/Tea
+<ppp><p>10:30 – 11:30 Ion densities and plasma temperatures (V. Truhlik)
+<ppp><p>11:30 – 12:30 FPMU data for ionospheric studies (J. Minow)
+<ppp><p>12:30-14:00 Lunch
+<ppp><p>14:00-14:30 Matlab tools for scintillation studies (C. Rino)
+<ppp><p>14:30-15:30 Team work
+<ppp><p>15:30-16:00 Coffee/Tea
+<ppp><p>16:00-17:30 Team work
+<ppp><p>FRIDAY (10 Nov.): 
+<ppp><p>09:00-10:00 Incoherent scatter radar (S.-R. Zhang)
+<ppp><p>10:00-10:30 Coffee/Tea
+<ppp><p>10:30-11:30 Coupling between ionosphere and thermosphere at low latitudes (S. Watanabe)
+<ppp><p>11:30-12:00 Access to incoherent scatter data (S.-R. Zhang)
+<ppp><p>12:00-14:00 Lunch/ Group photo
+<ppp><p>14:00-15:30 Team work 
+<ppp><p>15:30-16:00 Coffee/Tea
+<ppp><p>16:00-17:30 Team work and test presentations
+<ppp><p>Language of instruction 
+<ppp><p>English
+<ppp><p>
+<ppp><p>Lecturers:
+<ppp><p>Dieter Bilitza (George Mason University, USA, and Heliophysics Science Division, NASA, USA)
+<ppp><p>- IRI model and open problems
+<ppp><p>Jann-Yenq Liu (Institute of Space Science, National Central University, Taiwan) 
+<ppp><p>- COSMIC and other GNSS satellites
+<ppp><p>Bodo Reinisch (University of Massachusetts at Lowell, USA)
+<ppp><p>- Ionosondes and electron density profile
+<ppp><p>Ivan Galkin (University of Massachusetts at Lowell, USA)
+<ppp><p>- IRI Real-Time and GIRO ionosonde network
+<ppp><p>Vladimir Truhlik (Institute of Atmospheric Physics, Prague, Czech Republic)
+<ppp><p>- Modeling plasma temperatures and ion composition
+<ppp><p>Shigeto Watanabe (Hokkaido University, Japan)
+<ppp><p>- Coupling between ionosphere and thermosphere
+<ppp><p>Shunrong Zhang (MIT, Millstone Hill, USA)
+<ppp><p>- Incoherent scatter radar technique and data access
+<ppp><p>Andrzej Krankowski (University of Warmia and Mazury, Poland)
+<ppp><p>- GNSS data and ionospheric studies
+<ppp><p>Charles Rino (Boston College, USA) 
+<ppp><p>- Scintillation
+<ppp><p>Joseph Minow (NASA, Marshall Space Flight Center, USA.)
+<ppp><p>- FPMU data for ionospheric studies
+<ppp><p>Charles Lin (National Cheng Kung University, Taiwan)
+<ppp><p>- COSMIC/GNSS ionospheric studies
+<ppp><p>
+<ppp><p>The lecture and computer rooms are located at the Center for Space and Remote Sensing Research, within the same campus of the National Central University. This training facility is at about 5-10 minute walking distance from the Guest House of NCU, where students will be accommodated. 
+<ppp><p>Fast Internet (Wi-Fi for laptops and cable for the desktops in the computer room) will be available at the workshop venue.
+<ppp><p>
+<ppp><p>
+<ppp><p> 
+<ppp><p>Program IRI Workshop 
+<ppp><p>13–17 November 2017
+<ppp><p>Monday (Nov.13)
+<ppp><p>08:00-09:00 Check-in
+<ppp><p>09:00-10:00 Opening
+<ppp><p>
+<ppp><p>Session 1:Realtime IRI
+<ppp><p>10:00-10:40 International Reference Ionosphere – Update 2017 -Dieter Bilitza
+<ppp><p>10:40-11:20 Real-Time IRI: Progress to Date and Vision -Ivan Galkin
+<ppp><p>11:20-11:40 Coffee Break
+<ppp><p>11:40-12:00 Group Photo
+<ppp><p>12:00-13:30 Lunch Break
+<ppp><p>
+<ppp><p>Session 2: GNSS and Radio Occultation -I
+<ppp><p>14:00-14:20 Ionospheric Weather Observed by Radio Occultation of FORMOSAT-3/COSMIC -Jann-Yenq Liu
+<ppp><p>14:20-14:40 Exploration of global ionospheric plasma structure with FORMOSAT-3/COSMIC mission -Charles Lin
+<ppp><p>14:40-15:00 New IGS Ionospheric Analysis Centers assessment and ROTI polar maps – current IGS Iono Working Group activities -Andrzej Krankowski
+<ppp><p>15:00-15:20 Global ionosphere map constructed by using total electron content from ground-based GNSS receiver and FORMOSAT-3/COSMIC GPS occultation experiment -Yang-Yi Sun
+<ppp><p>15:20-15:40 Evaluation of IRI-2016 over IRI-2012 model of at low latitude Indian region during the ascending phase of Solar Cycle 24 -Sheetal Karia
+<ppp><p>15:40-16:00 Coffee Break
+<ppp><p>
+<ppp><p>Session 3: GNSS and Radio Occultation -II
+<ppp><p>16:00-16:20 Comparison of GPS TEC measurements with the IRI-2016 and the IRI-2012 models during the ascending phase of Solar Cycle 24 at Low Latitude Station, Thailand -Jumpon Udomchaibanjer
+<ppp><p>16:20-16:40 Data Assimilation of Ground-based GPS and Radio Occultation Total Electron Content for Global Ionospheric Specification -Chi-Yen Lin
+<ppp><p>16:40-17:00 Ionospheric electron density inversion for Global Navigation Satellite Systems radio occultation using aided Abel inversions -Min-Yang Chou
+<ppp><p>17:00-17:20 Touching space weather user needs via radio propagation -Kornyanat Hozumi 
+<ppp><p>17:20-17:40 A study of IRI modelled TEC and ground based measuring TEC at low latitude during the ascending phase of solar cycle 24 -Vishnu Singh Rathore
+<ppp><p>
+<ppp><p>Tuesday (Nov.14)
+<ppp><p>09:00-09:20 GNSS-derived vTEC ingestion into IRI2012 -Lei Liu 
+<ppp><p>
+<ppp><p>Session 4: Scintillation -I
+<ppp><p>09:20-09:40 Scintillation and TEC -Chuck Rino
+<ppp><p>09:40-10:00 Ionospheric electron density and scintillation observations using F3/COSMIC and FS7/COSMIC2 GPS/GNSS radio occultation data -Lung-Chih Tsai
+<ppp><p>10:00-10:20 A Global Scintillation Occurrence Probability Model Constructed by Using FORMOSAT-3/COSMIC S4-index Data -Shih-Ping Chen
+<ppp><p>10:20-10:40 Global Ionospheric scintillations revealed by GPS radio occultation data with FY3C satellite during the March 2015 Storm -Guojun Wang
+<ppp><p>10:40-11:00 Coffee Break 
+<ppp><p>
+<ppp><p>Session 5: Scintillation -II
+<ppp><p>11:00-11:20 Forecasting the L-band scintillations over the Indian longitudes using total electron content maps derived by using SBAS -Sneha Yadav 
+<ppp><p>11:20-11:40 Prediction of equatorial ionospheric scintillations using GPS and Artificial Neural Network based TEC models -Dibyendu Sur
+<ppp><p>11:40-12:00 Radar observations of F region field-aligned irregularities over Hainan region in descending phase of 24th solar cycle -Sheping Shang
+<ppp><p>12:00-12:20 Mid-latitude F-spread occurrence statistics from Irkutsk DPS-4 data -Konstantin Ratovsky 
+<ppp><p>12:20-14:00 Lunch Break
+<ppp><p>
+<ppp><p>Session 6: F-peak and above -I
+<ppp><p>14:00-14:20 Evaluating the IRI hmF2 Models with Alouette/ISIS Topside Sounder Data -Dieter Bilitza
+<ppp><p>14:20-14:40 Validating ISS FPMU Electron Density with the IRI Model and COSMIC Data -Joseph Minow 
+<ppp><p>14:40-15:00 Optimization of ionospheric parameters by means of genetic algorithms II -Juliana M. Jaen
+<ppp><p>15:00-15:20 Ionospheric topside long-term changes and their impact on the climatological modeling -Shun-Rong Zhang
+<ppp><p>15:20-15:40 Longitude dependence of annual and semi-annual variation of NmF2 from ionosonde and IRI-2016 at mid-latitude in Northern and Southern Hemispheres -Wang Zheng 
+<ppp><p>15:40-16:00 Coffee Break
+<ppp><p>
+<ppp><p>Session 7: F-peak and above -II
+<ppp><p>16:00-16:20 Electron Density Model of Plasmasphere -Shigeto Watanabe
+<ppp><p>16:20-16:40 Validation of extending measured bottomside EDPs to the topside ionosphere and plasmasphere -Mohamed Osman
+<ppp><p>16:40-17:00 Statistical Updates of IRI and IRI-Plas Using GPS-TEC in Near-Real Time for HF Communication and Ground Based Augmentation Systems -Feza Arikan
+<ppp><p>17:00-17:20 Evaluation of IRI-2012 and IRIPLAS model preformation during the seismic activity -Shivali Verma 
+<ppp><p>17:20-17:40 An Ability of the IRI2012 and IRI-Plas Models to Predict the Total Electron Content (TEC) -Galina Gordiyenko 
+<ppp><p>
+<ppp><p>Wednesday (Nov.15)
+<ppp><p>Session 8: Irregularities and Anomalies
+<ppp><p>09:00-09:20 NetTIDE: Pilot Ionosonde Network for Identification of Travelling Ionospheric Disturbances -Ivan Galkin
+<ppp><p>09:20-09:40 Traveling Ionospheric Disturbances Triggered by the Launches of Rockets and Missiles -Shen Ming-Hsueh
+<ppp><p>09:40-10:00 Solar and geomagnetic control of winter anomaly in NmF2 and TEC: longitudinal structure and definition problem -Maxim Klimenko 
+<ppp><p>10:00-10:20 On the performance of IRI-2016 to predict the north–south asymmetry of the equatorial ionization anomaly around 73°E longitude -Sheetal Karia
+<ppp><p>10:20-10:40 Anomalous variations of ionospheric foF2 and TEC associated with large magnetic (M≥5.0) earthquakes occurred around Thailand region -Noraset Wichaipanich
+<ppp><p>10:40-11:00 Coffee Break
+<ppp><p>
+<ppp><p>Session 9: Storm modelling -I
+<ppp><p>11:00-11:20 The study of TEC storm on 13 October 2016 at 40°N longitude region -Qingtao Wan
+<ppp><p>11:20-11:40 Analysis of Ionospheric Irregularities in Low Latitude during Geomagnetic Storm Using GISTM and Ionosonde Networks -Dessi Marlia
+<ppp><p>11:40-12:00 Seasonal and Storm-Time Features of Occurrence the Main Ionospheric Trough -Kacper Kotulak
+<ppp><p>12:00-12:20 Investigation of the IRI storm time performance from observational and theoretical model perspective in Solar Cycle 24 -Bitap Raj Kalita
+<ppp><p>12:20-14:00 Lunch Break
+<ppp><p>14:00-17:00 Field trip to NSPO
+<ppp><p>18:00- Banquet
+<ppp><p>
+<ppp><p>Thursday (Nov.16)
+<ppp><p>Session 10: Storm modelling -II
+<ppp><p>09:00-09:20 Statistical Modeling of Recurrent Ionospheric Storms -Alexei Dmitriev
+<ppp><p>09:20-09:40 Temporal evolution of the EIA along 95°E as obtained from GNSS TEC measurements and model simulations -Geetashree Kakoti
+<ppp><p>09:40-10:00 Energetic electron enhancements ionizing the low-latitude ionosphere: a prelude to a model -Suvorova Alla
+<ppp><p>10:00-10:20 The Quiet and Storm Time Performance of the IRI 2012 at the Crest of the Longitudinal WN4 Structure along 90º-130ºE Longitude Sector During Solar Cycle 24 -Bitap Raj Kalita
+<ppp><p>10:20-10:40 The Monitoring of GNSS Ionosphere and its Application -Xiaoya Wang
+<ppp><p>10:40-11:00 Coffee Break
+<ppp><p>
+<ppp><p>Session 11: Ion composition, temperatures and ion drift
+<ppp><p>11:00-11:20 Recent progress in empirical modeling of ion composition in the topside ionosphere -Vladimir Truhlik 
+<ppp><p>11:20-11:40 An investigation of ionospheric upper transition height variations at low and equatorial latitudes deduced from combined COSMIC and C/NOFS measurements -Changjun Yang
+<ppp><p>11:40-12:00 New and old data sets for possible improvement of plasma temperatures and minor ion composition models for IRI -Vladimir Truhlik 
+<ppp><p>12:00-12:20 Modelling ionospheric vertical drifts in low latitude region and comparison with the IRI model -John Bosco Habarulema 
+<ppp><p>12:20-14:00 Lunch Break
+<ppp><p>
+<ppp><p>Session 12: New Inputs for IRI - I
+<ppp><p>14:00-14:20 Ionosonde-Based Indices for Improved Representation of Solar Cycle Variation in the International Reference Ionosphere Model -Steven Brown
+<ppp><p>14:20-14:40 Comparison of Different Solar Proxies for Midlatitude Ionosonde Stations Using IRI-Plas Online -Feza Arikan 
+<ppp><p>14:40-15:00 The International LOFAR Telescope ionospheric service -Kacper Kotulak
+<ppp><p>15:00-15:20 Korean region ionosphere modeling using Ionospheric Data Assimilation Four-Dimensional (IDA3D) algorithm -Chalachew K. Mengist 
+<ppp><p>15:20-15:40 GPS IONOSPHERIC MAPPING AND TOMOGRAPHY: FISRT EXPERIENCE OVER PENINSULAR MALAYSIA -Siti Syukriah Binti Khamdan 
+<ppp><p>15:40-16:00 Coffee Break
+<ppp><p>
+<ppp><p>Session 13: Student Presentations
+<ppp><p>16:00-16:15 15-min final presentations of the student team 1
+<ppp><p>16:15-16:30 15-min final presentations of the student team 2
+<ppp><p>16:30-16:45 15-min final presentations of the student team 3
+<ppp><p>16:45-17:00 15-min final presentations of the student team 4
+<ppp><p>17:00-17:15 15-min final presentations of the student team 5
+<ppp><p>17:15-17:30 15-min final presentations of the student team 6
+<ppp><p>17:30-17:45 15-min final presentations of the student team 7
+<ppp><p>
+<ppp><p>Friday (Nov.17)
+<ppp><p>Session 14: New Inputs for IRI - II
+<ppp><p>09:00-09:20 Data/Sensor Fusion of GPS-TEC and IRI-Plas for Improved Structural Representation of Background Ionospheric Model -Feza Arikan
+<ppp><p>09:20-09:40 Vertical Coupling between Sporadic-E Layer and Mesopause Region: A Case Study during Counter Electrojet Events -Ajesh Asokan Pillai 
+<ppp><p>09:40-10:00 Variation of the NeQuick bottomside thickness parameter with correction factor during the solar maximum of 24th solar cycle -Punyawi Jamjareegulgarn
+<ppp><p>10:00-10:20 Photochemical model for atomic oxygen ion retrieval from ground-based observations of airglow -Duann Yi
+<ppp><p>10:20-10:40 Coffee Break
+<ppp><p>10:40-12:00 Final Discussions
+<ppp><p>12:00-13:30 Lunch Break
+<ppp><p>13:30-14:30 Student Award Ceremony and Closing
+<ppp><p>Poster session 
+<ppp><p>Differential Rate of TEC Method for Investigation of Seasonal Variations of Ionosphere over Turkey -Secil Karatay 
+<ppp><p>Modeling the topside ionosphere by means of electron density values recorded by the Swarm constellation -Alessio Pignalberi 
+<ppp><p>Quiet and Disturbed Time Characteristics of Blanketing Es (Esb) during Solar Cycle 23 -Virendra Yadav 
+<ppp><p>On the variability of centroid of nocturnal O1D 630.0 nm emission: an investigation -Ajesh Asokan Pillai 
+<ppp><p>The steady state behavior of proton whistler waves and kinetic Alfvén waves to study solar wind turbulence -Ravinder Goyal
+<ppp><p>Spectral Management System for Over-the-Horizon Radar (OTHR) in Canada -Thayananthan Thayaparan 
+<ppp><p>Geomagnetic storm effect at mid-low-equatorial D-region ionosphere inferred using VLF waves at Indian Low latitude station -Ajeet Kumar Maurya 
+<ppp><p>
+<ppp><p>

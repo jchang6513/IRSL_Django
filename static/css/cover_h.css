@@ -1,0 +1,75 @@
+.cover-h1-fade {
+    position:relative;
+    -webkit-animation-name: animatebottom;
+	-moz-animation-name: animatebottom;
+	-o-animation-name: animatebottom;
+	animation-name: animatebottom;
+    
+    -webkit-animation-fill-mode:both;
+    -moz-animation-fill-mode:both;
+    -ms-animation-fill-mode:both;
+    -o-animation-fill-mode:both;
+    animation-fill-mode:both;
+    
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -ms-animation-fill-mode: 1;
+    -o-animation-fill-mode: 1;    
+    animation-iteration-count: 1;
+    
+    -webkit-animation-duration:1.2s;
+    -moz-animation-duration:1.2s;
+    -ms-animation-duration:1.2s;
+    -o-animation-duration:1.2s;
+    animation-duration:1.2s;
+}
+
+.cover-h2-fade {
+    position:relative;
+    -webkit-animation-name: animatebottom;
+	-moz-animation-name: animatebottom;
+	-o-animation-name: animatebottom;
+	animation-name: animatebottom;
+    
+    -webkit-animation-fill-mode:both;
+    -moz-animation-fill-mode:both;
+    -ms-animation-fill-mode:both;
+    -o-animation-fill-mode:both;
+    animation-fill-mode:both;
+    
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -ms-animation-fill-mode: 1;
+    -o-animation-fill-mode: 1;    
+    animation-iteration-count: 1;
+    
+    -webkit-animation-duration:1.7s;
+    -moz-animation-duration:1.7s;
+    -ms-animation-duration:1.7s;
+    -o-animation-duration:1.7s;
+    animation-duration:1.7s;
+}
+
+@keyframes animatebottom {
+    from{bottom:-400px;opacity:0} 
+    to{bottom:0;opacity:1}
+}
+
+@-webkit-keyframes animatebottom {
+	from {-webkit-bottom: -400px; -webkit-opacity: 0;}
+	to   {-webkit-bottom: 0px; -webkit-opacity: 1;}
+}
+
+@-moz-keyframes animatebottom {
+	from {-moz-bottom: -400px; -moz-opacity: 0;}
+	to   {-moz-bottom: 0px; -moz-opacity: 1;}    
+}
+
+@-o-keyframes animatebottom {
+	from {-o-bottom: -400px; -o-opacity: 0;}
+	to   {-o-bottom: 0px; -o-opacity: 1;}
+}
+@keyframes animatebottom {
+	from {bottom: -400px; opacity: 0;}
+	to   {bottom: 0px; opacity: 1;}
+}

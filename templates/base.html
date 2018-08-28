@@ -1,0 +1,101 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+    <head>
+	<title> {% block head_title %} {% endblock %} </title>
+        <meta charset="UTF-8">        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+	{% block head_meta %}
+    	{% endblock %}
+        <meta property="og:image" content='{% static "images/irsl_h_b.png" %}'/>
+	<meta property="og:description" content="歡迎來到太空科學研究所電離層物理實驗室，希望藉此網頁能夠讓更多的人認識我們並讓更多的人認識電離層物理，如果對電離層物理有興趣或有任何疑問，歡迎與我們聯絡。" />
+        <meta property="og:description" content="Welcome to the website of ionospheric physics laboratory, NCU. It is our pleasure to make more people to understand and appreciate about the Ionospheric Physics. If you have any questions abous our work, feel free to contact us."/>
+        <meta property="og:locale" content="zh_TW" />        
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="IRSL" />          
+        <link rel="icon" href='{% static "images/irsl_icon.png" %}' />
+	<link rel="stylesheet" type="text/css" href='{% static "css/cover_h.css" %}'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link rel="stylesheet" href='{% static "css/hamburgers.css" %}' type="text/css">
+        <link rel="stylesheet" href='{% static "css/style.css" %}' type="text/css">
+	<link rel="stylesheet" type="text/css" href='{% static "css/bounce_arrow.css" %}'>
+	  
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript" ></script>
+        <script src='{% static "js/jquery.waypoints.min.js" %}' type="text/javascript"></script>                
+        <script src='{% static "js/style.js" %}' type="text/javascript"></script>
+        <script src='{% static "js/animate.js" %}' type="text/javascript"></script>
+    </head>
+    
+    <body>
+        {% block nav %} 
+	  {% block nav_class %}
+        <nav class="header-fade navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse non-index">
+	  {% endblock %}
+            <div class="container">
+                <a class="navbar-brand mb-0" href="{% url 'home' %}">
+		    	  {% block nav_logo %}
+                    <img src='{% static "images/irsl_h_w.png" %}'>
+			  {% endblock %}
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        {% block intro_state %}<li class="nav-item">{% endblock %} <a class="nav-link" href="{% url 'intro' %}">Introduction </a></li>
+                        {% block news_state %}<li class="nav-item">{% endblock %}<a class="nav-link" href="{% url 'news' %}">News </a></li>
+                        {% block member_state %}<li class="nav-item">{% endblock %}<a class="nav-link" href="{% url 'member' %}">Member </a></li>
+                        {% block course_state %}<li class="nav-item">{% endblock %}<a class="nav-link" href="{% url 'course' %}">Course </a></li>
+                        {% block pub_state %}<li class="nav-item">{% endblock %}<a class="nav-link" href="{% url 'pub' %}">Publication </a></li>
+                        {% block achiev_state %}<li class="nav-item">{% endblock %}<a class="nav-link" href="{% url 'achiev' %}">Achievement </a></li>
+                        {% block conf_state %}<li class="nav-item">{% endblock %}<a class="nav-link" href="{% url 'conf' %}">Conference </a></li>
+                        {% block research_state %}<li class="nav-item">{% endblock %}<a class="nav-link" href="{% url 'research' %}">Research </a></li>
+                        {% block link_state %}<li class="nav-item">{% endblock %}<a class="nav-link" href="{% url 'link' %}">Link </a></li>
+                    </ul>
+                </div>       
+            </div>
+
+		{% block nav_button %}
+            <button class="navbar-toggler navbar-toggler-right hamburger hamburger--animate" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		{% endblock %}
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>        
+        </nav>
+	  {% endblock %}
+
+	  {% block body_banner %}
+        <div class="header-fade header jumbotron">            
+            <h2 class="header-h2-fade">{% block banner_title%}{% endblock %}</h2>
+        </div>
+	  {% endblock%}
+
+        {% block body_content %}
+	  {% endblock %}
+	  
+	  {% block body_footer %} 
+        <footer class="footer-fade footer">
+            <div class="container text-center">
+                <br>
+                <span class="text-muted">地址：32001 桃園市中壢區中大路300號科學四館803-1室
+                <br>
+                Add：Room 803-1 Science Buildin 4, No. 300, Zhongda Rd., Zhongli District, Taoyuan City 32001, Taiwan
+                <br>
+                TEL：886-3-4227151 Ext.65780
+                <br>
+                E-Mail：jyliu@jupiter.ss.ncu.edu.tw
+                <br>
+                Copyright © 2017 Yi-Wei Chang. All rights reserved.
+                <br></span>                
+            </div>
+        </footer>
+	  {% endblock %}
+	  
+	  {% block foot_js %}
+        <script src='{% static "js/animate.js" %}' type="text/javascript"></script>
+	  {% endblock %}
+
+    </body>
+</html>

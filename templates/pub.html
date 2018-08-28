@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+{% block head_title %}        
+	  Publication - IRSL
+{% endblock %}        
+
+{% block head_meta %}    
+        <meta property="og:title" content="Publication - IRSL"/>
+        <meta property="og:title" content="期刊著作 - IRSL" />
+        <meta property="og:url" content="http://irsl.ss.ncu.edu.tw/publication/"/>
+{% endblock %}
+
+{% block pub_state %} 
+        <li class="nav-item active">
+{% endblock %}	  
+
+{% block banner_title%}
+            Publication
+{% endblock %}
+
+{% block body_content %}        
+        <div class="content-fade container mb-5">
+            <div class="row">
+                <div class="col align-self-center text-left">
+		    <h3><a href="{{plist.List.url}}" target="_blank">Publication List<a></h3>
+                    <br/>
+
+                    <h3>國際期刊</h3>
+			  <br>
+			  {% for inter in inters %}
+				<div class="hideme">
+				<p> {{inter.NO}} </p>
+				{% if inter.paper %}
+				<a href="{{inter.paper.url}}" target="_blank">
+				{% else %}
+				<a href="" target="_blank">
+				{% endif %}
+				<p> {{inter.author}} </p>
+				<p> {{inter.title}} </p></a>
+                    	<hr class="s1"><br></div>
+			  {% endfor %}
+
+			  <br/>
+
+                    <h3>國內期刊</h3>                    
+			  <br>
+			  {% for domes in domess %}
+				<div class="hideme">
+				<p> {{domes.NO}} </p>
+				{% if domes.paper %}
+				<a href="/media/{{domes.paper}}" target="_blank">
+				{% else %}
+				<a href="" target="_blank">
+				{% endif %}
+				<p> {{domes.author}} </p>
+				<p> {{domes.title}} </p></a>
+                    	<hr class="s1"><br></div>
+			  {% endfor %}
+
+                    <br/>
+
+                    <h3>專書</h3>
+			  <br>
+			  {% for book in books %}
+				<div class="hideme">
+				<p> {{book.NO}} </p>
+				{% if book.paper %}
+				<a href="/media/{{book.paper}}" target="_blank">
+				{% else %}
+				<a href="" target="_blank">
+				{% endif %}
+				<p> {{book.author}} </p>
+				<p> {{book.title}} </p></a>
+                    	<hr class="s1"><br></div>
+			  {% endfor %}
+
+                </div>
+            </div>
+        </div>
+{% endblock %}        

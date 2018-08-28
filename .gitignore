@@ -1,0 +1,6 @@
+static_cdn
+media
+irslSITE_nginx.conf
+irslSITE_uwsgi.ini
+uwsgi_params
+uwsgi.ini

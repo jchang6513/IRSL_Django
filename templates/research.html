@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block head_title %}
+	Research - IRSL
+{% endblock %}	  
+
+{% block head_meta %}        
+	<meta property="og:title" content="Research - IRSL"/>
+	<meta property="og:title" content="研究計畫 - IRSL" />
+	<meta property="og:url" content="http://irsl.ss.ncu.edu.tw/research/"/>
+{% endblock %}
+
+{% block research_state%}
+	<li class="nav-item active">
+{% endblock %}	
+        
+{% block banner_title %}
+	Research
+{% endblock %}        
+
+{% block body_content %}
+        <div class="content-fade container mb-5">
+            <div class="row">
+                <div class="content col align-self-center text-justify">
+                    <h3>研究計畫</h3>
+			  <br>
+			  {% for research in researches%}
+			  <div class="hideme"><br/>
+			  	<p>{{research.start}}~{{research.end}} </p>
+			  	<p>{{research.title}}  </p>
+			  	<p>{{research.organization}}</p>
+			  	<hr class="s2"/>
+			  </div>
+			  {% endfor %}
+                </div>           
+            </div>  
+	  </div>
+{% endblock %}	  

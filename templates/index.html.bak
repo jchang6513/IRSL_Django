@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html prefix="og: http://ogp.me/ns#">
+    <head>
+        <title>太空所電離層物理實驗室 - Ionospheric Radio Science Laboratory - IRSL</title>
+        <meta charset="UTF-8">        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+
+        <meta property="og:title" content="Ionospheric Radio Science Laboratory"/>
+        <meta property="og:title" content="太空所電離層物理實驗室 - IRSL" />        
+        <meta property="og:image" content="http://www.ss.ncu.edu.tw/~jyliu/images/irsl_h_b.png" />
+        <meta property="og:description" content="Welcome to the website of ionospheric physics laboratory, NCU. It is our pleasure to make more people to understand and appreciate about the Ionospheric Physics. If you have any questions abous our work, feel free to contact us."/>
+        <meta property="og:description" content="歡迎來到太空科學研究所電離層物理實驗室，希望藉此網頁能夠讓更多的人認識我們並讓更多的人認識電離層物理，如果對電離層物理有興趣或有任何疑問，歡迎與我們聯絡。" />
+        <meta property="og:url" content="http://www.ss.ncu.edu.tw/~jyliu/index.html" />
+        <meta property="og:locale" content="zh_TW" />        
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="IRSL" />          
+        
+	  {% include 'base_head.html' %}
+	  <link rel="stylesheet" type="text/css" href="/static/css/bounce_arrow.css">
+	  <link rel="stylesheet" type="text/css" href="/static/css/cover_h.css">
+    </head>
+    
+    <body>             
+        <nav class="header-fade navbar fixed-top navbar-toggleable-md navbar-light bg-faded">
+            <div class="container">
+                <a class="navbar-brand mb-0" href="{% url 'home' %}">
+                    <img src="/static/images/irsl_h_b.png">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="intro.html">Introduction </a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'news' %}">News </a></li>                    
+                        <li class="nav-item"><a class="nav-link" href="member.html">Member </a></li>
+                        <li class="nav-item"><a class="nav-link" href="course.html">Course </a></li>
+                        <li class="nav-item"><a class="nav-link" href="publication.html">Publication </a></li>
+                        <li class="nav-item"><a class="nav-link" href="achievment.html">Achievement </a></li>
+                        <li class="nav-item"><a class="nav-link" href="conference.html">Conference </a></li>
+                        <li class="nav-item"><a class="nav-link" href="research.html">Research </a></li>
+                        <li class="nav-item"><a class="nav-link" href="link.html">Link </a></li>
+                    </ul>
+                </div>       
+            </div>
+            <button class="navbar-toggler navbar-toggler-right hamburger-light hamburger hamburger--animate" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>        
+        </nav>     
+
+
+
+        <div class="cover-fade cover jumbotron text-center mb-0">    
+            <h1 class="">IRSL</h1>
+            <h2 class="">Ionospheric Radio Science Laboratory</h2>
+            <div class="cover-fade arrow animated bounce">
+                <img width="40" height="40" alt="" src="/static/images/two_arrow_w.png" />
+            </div>
+        </div>
+
+        
+
+        <div class="hideme container pt-5">
+
+            <div class="col align-self-center text-left">
+                <h1 class="headlines text-center"><span class="text-line">Headlines</span></h1>
+                <br>
+                {% for news in newss %}
+                	  <p>{{news.title}}</p>
+                    <p>{{news.date}}</p>                        
+                    <p>{{news.content}} ...<a href={{news.more}} target="_blank"><strong> More Info </strong></a></p>
+                    <hr class="s1"><br>
+                {% endfor %}
+            </div>
+        </div>
+        
+        <div class="hideme container pb-5">
+            <h1 class="headlines text-center"><span class="text-line">Location</span></h1>
+            <br>
+            <div id="map" style="background:black;width:100%;height:50vh;"></div>
+        </div>
+        
+        <footer class="footer-fade footer">
+            <div class="container text-center">
+                <br>
+                <span class="text-muted">地址：32001 桃園市中壢區中大路300號科學四館803-1室
+                <br>
+                Add：Room 803-1 Science Buildin 4, No. 300, Zhongda Rd., Zhongli District, Taoyuan City 32001, Taiwan
+                <br>
+                TEL：886-3-4227151 Ext.65780
+                <br>
+                E-Mail：jyliu@jupiter.ss.ncu.edu.tw
+                <br>
+                Copyright © 2017 Yi-Wei Chang. All rights reserved.
+                <br></span>                
+            </div>
+        </footer>
+        
+        <script>
+        
+            function myMap() {
+                var mapCanvas = document.getElementById("map");
+                var myCenter = new google.maps.LatLng(24.9678841,121.1929443); 
+                var science4 = new google.maps.LatLng(24.9714917,121.1920186); 
+                var mapOptions = {
+                    center: myCenter, zoom: 14
+                };
+                var map = new google.maps.Map(mapCanvas,mapOptions);
+                var marker = new google.maps.Marker({
+                    position: science4,
+                    //animation: google.maps.Animation.DROP
+                });
+                // Zoom to 9 when clicking on marker
+                google.maps.event.addListener(marker,'click',function() {
+                    map.setZoom(17);
+                    map.setCenter(marker.getPosition());
+                });            
+                marker.setMap(map);
+            }
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?callback=myMap" type="text/javascript"></script>
+        <script src="/static/js/animate.js" type="text/javascript"></script>
+    </body>
+</html>

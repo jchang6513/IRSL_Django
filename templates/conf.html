@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block head_title %}
+      Conference - IRSL
+{% endblock %}	  
+       
+{% block head_meta %}	  
+      <meta property="og:title" content="Conference - IRSL"/>
+      <meta property="og:title" content="參與會議 - IRSL" />
+      <meta property="og:url" content="http://irsl.ss.ncu.edu.tw/conference/"/>
+{% endblock %}
+
+{% block conf_state %}
+	<li class="nav-item active">
+{% endblock %}
+            
+{% block banner_title %}		
+	Conference
+{% endblock %}
+        
+{% block body_content %}
+        <div class="content-fade container conf mb-5">
+            <div class="row">
+                <div class="content col align-self-center text-justify hidden-sm-down">
+                    <h3>協辦研討會</h3>
+                    <table>
+			  {% for conf in confs %}
+                        <tr class="hideme"><td class="con-td1">{{conf.start}}~{{conf.end}}</td>
+                            <td class="con-td2">{{conf.title}}</td>
+                            <td class="con-td3">{{conf.location}}</td></tr>
+			  {% endfor %}
+                    </table> 
+                    <br>
+                    <h3>受邀演講</h3>
+                    <table>
+			  {% for oral in orals %}
+                        <tr class="hideme"><td class="con-td1">{{oral.date}}</td>
+                            <td class="con-td2">{{oral.title}}</td>
+                            <td class="con-td3">{{oral.location}}</td></tr>
+			  {% endfor %}
+                    </table>          
+                </div>                           
+                <div class="content col align-self-center text-center hidden-md-up">
+                    <h3>協辦研討會</h3>
+                    <table class="text-center">
+			  {% for conf in confs %}
+                        <tr class="hideme"><td>{{conf.start}}~{{conf.end}}<br>
+                            			     {{conf.title}}<br>
+                            			     {{conf.location}}</td></tr>
+			  {% endfor %}
+                    </table>           
+                    <br>
+                    <h3>受邀演講</h3>
+			  {% for oral in orals %}
+                        <tr class="hideme"><td>{{oral.date}}<br>
+                            			     {{oral.title}}<br>
+                            			     {{oral.location}}</td></tr>
+			  {% endfor %}
+                    </table>
+                    <br>                    
+                </div>
+            </div>            
+        </div>
+{% endblock %}	  
