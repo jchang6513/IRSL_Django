@@ -11,9 +11,9 @@ class JYLiu_CV(models.Model):
 
 class Member(models.Model):
 	english = models.CharField(max_length=30)
-	chinese = models.CharField(max_length=10)	
+	chinese = models.CharField(max_length=10)
 #	thumb = models.ImageField(upload_to = 'member_thumbnails/', default = 'member_thumbnails/member_thumb.png')
-	thumb = models.FileField(upload_to='paper/', default='member_thumbnails/member_thumb.png');
+	thumb = models.FileField(blank=True, upload_to='paper/', default='member_thumbnails/member_thumb.png');
 	IDENTITY = (
 		('PD','Postdoctoral'),
 		('FA','Full-time Assistant'),
@@ -25,12 +25,12 @@ class Member(models.Model):
 		choices=IDENTITY,
 		default='PD',
 	)
-	
+
 	email  = models.EmailField(max_length=100)
 
 	class Meta:
 		ordering = ['english']
-	
+
 	def __str__(self):
 		return self.english
 
@@ -52,10 +52,10 @@ class Past(models.Model):
 		choices=IDENTITY,
 		default='VP',
 	)
-	
+
 	class Meta:
 		ordering = ['-end']
-	
+
 	def __str__(self):
 		return self.english
 
@@ -81,11 +81,3 @@ class Graduate(models.Model):
 
 	def __str__(self):
 		return self.chinese
-
-
-
-
-
-
-
-
