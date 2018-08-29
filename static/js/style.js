@@ -2,11 +2,11 @@ $(function() {
     var images = ['1','2','3','4','5','6','7','8','9','10','11'];
     var num = Math.floor(Math.random() * images.length);
     
-    $('.jumbotron').css({'background': 'url(/static/images/jumbotron/k_' + images[num] + '.jpg) no-repeat center'});   
+    $('.jumbotron').css({'background': 'url(/static/images/jumbotron/small_' + images[num] + '.jpg) no-repeat center'});   
     $('.jumbotron').css({'background-size': 'cover'});
     $('.jumbotron').css({'border-radius': '0px'})    
     setTimeout(function() {
-        $('.arrow').css({'visibility':'visible'});
+		$('.arrow').css({'visibility':'visible'});
     },1000)
 });
 
