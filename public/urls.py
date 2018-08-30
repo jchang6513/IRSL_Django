@@ -48,7 +48,7 @@ urlpatterns = [
     path('conference/', conf, name='conf'),
     path('research/', research, name='research'),
     path('link/', link, name='link'),
-    url(r'^api/', include(router.urls)),
+    path('api/', include(router.urls)),
 ]
 
 #if settings.DEBUG:
