@@ -18,6 +18,7 @@ from django.urls import path
 from django.conf import settings
 from django.conf.urls import include, url
 from django.conf.urls.static import static
+from rest_framework.routers import DefaultRouter
 
 from home.views import home
 from intro.views import intro
@@ -28,7 +29,11 @@ from publication.views import pub
 from achiev.views import achiev
 from conference.views import conf
 from research.views import research
+from link.views import LinkViewSet
 from link.views import link
+
+router = DefaultRouter()
+router.register(r'link', LinkViewSet)
 
 urlpatterns = [
     path('', home),
@@ -43,6 +48,7 @@ urlpatterns = [
     path('conference/', conf, name='conf'),
     path('research/', research, name='research'),
     path('link/', link, name='link'),
+    url(r'^api/', include(router.urls)),
 ]
 
 #if settings.DEBUG:
