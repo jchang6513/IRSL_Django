@@ -1,14 +1,44 @@
 {% extends 'base.html' %}
+{% load staticfiles %}
 
 {% block title %}
         <title>Link - IRSL</title>
 {% endblock %}
 
-{% block head_meta %}        
+{% block head_meta %}
         <meta property="og:title" content="Link - IRSL"/>
         <meta property="og:title" content="相關連結 - IRSL" />
         <meta property="og:url" content="http://irsl.ss.ncu.edu.tw/link/"/>
-{% endblock %}	  
+        <style>
+            .card-link {
+                margin-left: 0.5rem !important;
+                margin-right: 0.5rem !important;
+            }
+
+            .user-card-header {
+                height: 70% !important;
+                background-color: white !important;
+            }
+
+            .user-card-body {
+                padding-top: 1.5rem !important;
+            }
+
+            .card-container {
+              display: flex;
+              flex-flow: row;
+              flex-wrap: wrap;
+              justify-content: center;
+              align-items: center;
+              width: 100%;
+              box-sizing: border-box;
+              @media screen and (max-width: 768px) {
+                flex-flow: column;
+              }
+            }
+
+        </style>
+{% endblock %}
 
 {% block link_state%}
 	<li class="nav-item active">
@@ -18,86 +48,11 @@
       Link
 {% endblock %}
 
-{% block body_content %}        
-        <div class="content-fade container">
+{% block body_content %}
+        <div class="content-fade container col-11">
             <div class="row-link row text-center">
-                <div class="hideme col-lg-3 col-md-4 col-xs-6 mb-4">
-                    <a href="http://www.ncu.edu.tw" class="d-block" target="_blank">
-                        <img class="img-fluid img-thumbnail" src="/static/images/link/ncu.png" alt="">
-                        <div class="cover rounded"></div>
-                        <div class="link-name">國立中央大學</div>
-                    </a>
-                </div>
-                <div class="hideme col-lg-3 col-md-4 col-xs-6 mb-4">
-                    <a href="http://www.ss.ncu.edu.tw" class="d-block" target="_blank">
-                        <img class="img-fluid img-thumbnail" src="/static/images/link/ssncu.png" alt="">
-                        <div class="cover rounded"></div>
-                        <div class="link-name">中央太空所</div>
-                    </a>
-                </div>
-                <div class="hideme col-lg-3 col-md-4 col-xs-6 mb-4">
-                    <a href="http://www.ss.ncu.edu.tw/~istep/index.html" class="d-block" target="_blank">
-                        <img class="img-fluid img-thumbnail" src="/static/images/link/istep_s_b.png" alt="">
-                        <div class="cover rounded"></div>
-                        <div class="link-name">iSTEP</div>
-                    </a>
-                </div>
-                <div class="hideme col-lg-3 col-md-4 col-xs-6 mb-4">
-                    <a href="http://www.ss.ncu.edu.tw/~jyliu/pages/f3cgs4/index.html" class="d-block" target="_blank">
-                        <img class="img-fluid img-thumbnail" src="/static/images/link/f3cgs4.png" alt="">
-                        <div class="cover rounded"></div>
-                        <div class="link-name">全球地面觀測閃爍指數模擬</div>
-                    </a>
-                </div>
-                <div class="hideme col-lg-3 col-md-4 col-xs-6 mb-4">
-                    <a href="http://www.nspo.gov.tw/" class="d-block" target="_blank">
-                        <img class="img-fluid img-thumbnail" src="/static/images/link/nspo.jpg">
-                        <div class="cover rounded"></div>
-                        <div class="link-name">國家太空中心</div>
-                    </a>
-                </div> 
-                <div class="hideme col-lg-3 col-md-4 col-xs-6 mb-4">
-                    <a href="http://www.csrsr.ncu.edu.tw/" target="_blank">
-                        <img class="img-fluid img-thumbnail" src="/static/images/link/csrsr.png">
-                        <div class="cover rounded"></div>
-                        <div class="link-name">遙測中心</div>
-                    </a>
-                </div> 
-                <div class="hideme col-lg-3 col-md-4 col-xs-6 mb-4">
-                    <a href="http://210.69.76.10/satellite/index.html" class="d-block" target="_blank">
-                        <img class="img-fluid img-thumbnail" src="/static/images/link/ssc.png">
-                        <div class="cover rounded"></div>
-                        <div class="link-name">內政部地政司衛星測量中心</div>
-                    </a>
-                </div> 
-                <div class="hideme col-lg-3 col-md-4 col-xs-6 mb-4">
-                    <a href="http://www.cwb.gov.tw/" class="d-block" target="_blank">
-                        <img class="img-fluid img-thumbnail" src="/static/images/link/cwb.png">
-                        <div class="cover rounded"></div>
-                        <div class="link-name">中央氣象局</div>
-                    </a>
-                </div> 
-                <div class="hideme col-lg-3 col-md-4 col-xs-6 mb-4">
-                    <a href="http://www.narl.org.tw/" class="d-block" target="_blank">
-                        <img class="img-fluid img-thumbnail" src="/static/images/link/NARLabs.png">
-                        <div class="cover rounded"></div>
-                        <div class="link-name">國家實驗研究院</div>
-                    </a>
-                </div> 
-                <div class="hideme col-lg-3 col-md-4 col-xs-6 mb-4">
-                    <a href="http://cosmic-io.cosmic.ucar.edu/cdaac/index.html" class="d-block" target="_blank">
-                        <img class="img-fluid img-thumbnail" src="/static/images/link/CDAAC.png">
-                        <div class="cover rounded"></div>
-                        <div class="link-name">CDAAC</div>
-                    </a>
-                </div> 
-                <div class="hideme col-lg-3 col-md-4 col-xs-6 mb-4">
-                    <a href="http://sopac.ucsd.edu/" class="d-block" target="_blank">
-                        <img class="img-fluid img-thumbnail" src="/static/images/link/SOPAC.png">
-                        <div class="cover rounded"></div>
-                        <div class="link-name">SOPAC</div>
-                    </a>
-                </div> 
+                <div class="mb-3" id="app"></div>
+                <script src='{% static "js/app/list.js" %}' type="text/javascript"></script>
             </div>
-        </div>    
+        </div>
 {% endblock %}
