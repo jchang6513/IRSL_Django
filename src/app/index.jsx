@@ -1,5 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
+import { UserCard } from 'react-ui-cards';
 
 class App extends React.Component {
     constructor () {
@@ -7,18 +8,18 @@ class App extends React.Component {
         this.state = {
           error: null,
           isLoaded: false,
-          items: []
+          links: []
         };
     }
 
     componentDidMount() {
-      fetch("http://35.221.198.65/api/topnews/")
+      fetch("/api/link/")
         .then(res => res.json())
         .then(
           (result) => {
             this.setState({
               isLoaded: true,
-              items: result.items
+              links: result,
             });
           },
           // Note: it's important to handle errors here
@@ -34,21 +35,25 @@ class App extends React.Component {
     }
 
     render() {
-      const { error, isLoaded, items } = this.state;
-      console.log(items)
+      const { error, isLoaded, links } = this.state;
+      console.log(links)
       if (error) {
         return <div>Error: {error.message}</div>;
       } else if (!isLoaded) {
         return <div>Loading...</div>;
       } else {
         return (
-          <ul>
-            {items.map(item => (
-              <li key={item.name}>
-                {item.name} {item.price}
-              </li>
+          <div className="row-link row text-center">
+            {links.map(link => (
+                  <UserCard
+                    cardClass='float'
+                    href={link.link}
+                    header={link.img}
+                    name={link.chinese}
+                    positionName={link.english}
+                  />
             ))}
-          </ul>
+          </div>
         );
       }
     }
