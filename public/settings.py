@@ -26,10 +26,7 @@ SECRET_KEY = 'j7+dgnag7y5g$+lh+4bd0bnhs%96%oz*z8jo*lke(u=r_e1j+1'
 DEBUG = True
 #DEBUG = False
 
-ALLOWED_HOSTS = ['irsl.ss.ncu.edu.tw',
-				 'localhost',
-				]
-
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -47,7 +44,7 @@ INSTALLED_APPS = [
     'publication',
     'conference',
     'research',
-	'link',
+    'link',
 ]
 
 MIDDLEWARE = [
