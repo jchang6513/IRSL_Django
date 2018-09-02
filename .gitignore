@@ -1,8 +1,6 @@
+Dockerfile
 static_cdn
 media
-irslSITE_nginx.conf
-uwsgi_params
-uwsgi.ini
 __pycache__/
 
 # Byte-compiled / optimized / DLL files
