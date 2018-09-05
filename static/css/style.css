@@ -17,8 +17,8 @@ body{
     font-family: "Helvetica Neue", Helvetica, Arial, "微軟正黑體", "微软雅黑", sans-serif;
 }
 
-::-webkit-scrollbar { 
-    display: none; 
+::-webkit-scrollbar {
+    display: none;
 }
 
 
@@ -41,10 +41,10 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: darkslategray;    
+    color: darkslategray;
 }
 
-a:visited { 
+a:visited {
     color: darkslategray;
 }
 
@@ -115,13 +115,13 @@ hr.s3{
 
 .navbar #navbarNav {
 
-    color: black;    
+    color: black;
 
-    text-align: center;    
+    text-align: center;
 
     font-size: 17px;
 
-    font-weight: bold;    
+    font-weight: bold;
 
 }
 
@@ -134,11 +134,11 @@ hr.s3{
     padding-left: 0px;
     padding-right: 0px;
     height: 25px;
-}    
+}
 
 
 
-.jumbotron {       
+.jumbotron {
 
     overflow: hidden;
 
@@ -155,14 +155,14 @@ hr.s3{
 				url(/static/images/jumbotron/small_10.jpg) no-repeat center,
 				url(/static/images/jumbotron/small_11.jpg) no-repeat center;
 	border-radius: 0px;
-    padding: 0;   
+    padding: 0;
 }
 
 
 
-.sm-bg, .lg-bg {    
+.sm-bg, .lg-bg {
 
-    position: absolute;    
+    position: absolute;
 
     left: 0;
 
@@ -172,7 +172,7 @@ hr.s3{
 
 
 
-.cover {    
+.cover {
 
     height: 100vh;
 
@@ -180,7 +180,7 @@ hr.s3{
 
 
 
-.cover .sm-bg {    
+.cover .sm-bg {
 
     height: 100%;
 
@@ -196,15 +196,15 @@ hr.s3{
 
 
 
-.cover h1 {    
+.cover h1 {
 
 	color: #FFF;
 
 	font-family: "SafetyM";
 
-	font-size: 600%;	
+	font-size: 600%;
 
-    font-weight: bold;    
+    font-weight: bold;
 
     right: 0px;
 
@@ -214,15 +214,15 @@ hr.s3{
 
 
 
-.cover h2 {    
+.cover h2 {
 
-	color: #FFF;	
-    
+	color: #FFF;
+
 	font-family: "GudeaR";
 
 	font-size: 200%;
 
-    font-weight: bold;  
+    font-weight: bold;
 
     right: 0px;
 
@@ -240,9 +240,9 @@ hr.s3{
 
 
 
-.headlines {    
+.headlines {
 
-    position:relative;    
+    position:relative;
 
     font-family: "GudeaR";
 
@@ -250,7 +250,7 @@ hr.s3{
 
     text-align:center;
 
-    z-index:2;    
+    z-index:2;
 
 }
 
@@ -296,7 +296,7 @@ hr.s3{
 
 
 
-.header .sm-bg {    
+.header .sm-bg {
 
     height: 280px;}
 
@@ -312,9 +312,9 @@ hr.s3{
 
 .header h2{
 
-	font-family: "NEO";    
+	font-family: "NEO";
 
-    font-size: 350%;    
+    font-size: 350%;
 
     font-weight: bold;
 
@@ -322,7 +322,7 @@ hr.s3{
 
     padding-top: 130px;
 
-    text-align: center;    
+    text-align: center;
 
 }
 
@@ -336,7 +336,7 @@ hr.s3{
 
 table{
 
-    width: 100%;    
+    width: 100%;
 
     border-collapse: collapse;
 
@@ -346,7 +346,7 @@ table td{
 
     vertical-align: top;
 
-    line-height: 3;    
+    line-height: 3;
 
 }
 
@@ -364,16 +364,12 @@ table tr:hover{
     width: 150px;
 }
 
-.graduate_name{    
+.graduate_name{
     width: 100px;
 }
 
 .graduate_year{
     width: 250px;
-}
-
-.course_head{
-    width: 150px;
 }
 
 .con-td1 {
@@ -390,7 +386,7 @@ table tr:hover{
 
     width: 20vw;
 
-    height: auto;    
+    height: auto;
 
 }
 
@@ -401,16 +397,16 @@ table tr:hover{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
     visibility: hidden;
 }
 
-.row-link a .cover{    
+.row-link a .cover{
     background-color: white;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
     opacity: 0.8;
@@ -450,7 +446,7 @@ table tr:hover{
 }
 
 @keyframes animatetop {
-    from{bottom:100px;opacity:0} 
+    from{bottom:100px;opacity:0}
     to{bottom:0;opacity:1}
 }
 
@@ -462,23 +458,23 @@ table tr:hover{
     animation:fin 1s;
 }
 
-.fadein {    
+.fadein {
     animation:fin 1s;
     opacity: 1 !important;
 }
 
-.fadeout {    
+.fadeout {
     animation:fout 1s;
     opacity: 0 !important;
 }
 
 @keyframes fin {
-    from{opacity:0} 
+    from{opacity:0}
     to{opacity:1}
 }
 
 @keyframes fout {
-    from{opacity:1} 
+    from{opacity:1}
     to{opacity:0}
 }
 
@@ -490,7 +486,7 @@ table tr:hover{
 
     .navbar .container {
         width: 100%;
-    }   
+    }
 
 }
 
@@ -503,18 +499,18 @@ table tr:hover{
         width: 100%;
     }
 
-    .cover h1 {    
+    .cover h1 {
         font-size: 400%;
     }
 
     .img-thumbnail {
         width: 30vw;
-        height: auto;    
-    }     
+        height: auto;
+    }
     .footer{
         font-size: 8px;
         padding-bottom: 20px;
-    }    
+    }
 }
 
 @media only screen and (max-width : 768px) {
@@ -522,15 +518,15 @@ table tr:hover{
     h3 {
         font-size: 120%;
     }
-    
+
     h4 {
-        font-size: 110%;        
+        font-size: 110%;
     }
-    
+
     p {
-        font-size: 80%;    
+        font-size: 80%;
     }
-    
+
     td {
         font-size: 80%;
         padding-left: 5px;
@@ -539,37 +535,37 @@ table tr:hover{
 
     .navbar-brand img {
         height: 25px;
-    }    
+    }
 
-    .cover h1 {    
+    .cover h1 {
         font-size: 300%;
     }
 
-    .cover h2 {    
-        font-size: 100%;	
-    } 
-    
-    .headlines {    
+    .cover h2 {
+        font-size: 100%;
+    }
+
+    .headlines {
         font-size: 180%;
     }
-    
+
     .header {
         height: 200px;
     }
-    
+
     .header .sm-bg {
         height: 200px;
     }
-    
+
     .header .lg-bg {
         height: 200px;
-    }    
+    }
 
     .header h2 {
         padding-top: 90px;
         font-size: 250%;
     }
-    
+
     .member td {
         border-bottom: solid;
         border-width: 1px;
@@ -582,11 +578,10 @@ table tr:hover{
         border-width: 1px;
         border-color: #CCC;
         line-height: 2;
-    }    
+    }
 
     .img-thumbnail {
-        width: 300px;   
+        width: 300px;
         height: auto;
-    }     
+    }
 }
-

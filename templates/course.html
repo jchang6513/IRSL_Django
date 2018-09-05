@@ -1,71 +1,28 @@
 {% extends 'base.html' %}
+{% load staticfiles %}
 
 {% block head_title %}
         Course - IRSL
-{% endblock %}	  
+{% endblock %}
 
-{% block head_meta %}        
+{% block head_meta %}
         <meta property="og:title" content="Course - IRSL"/>
         <meta property="og:title" content="課程講義 - IRSL" />
         <meta property="og:url" content="http://irsl.ss.ncu.edu.tw/course/"/>
-{% endblock %}	  
+        <link rel="stylesheet" type="text/css" href='{% static "css/course.css" %}'>
+{% endblock %}
 
 {% block course_state %}
-	<li class="nav-item active">
-{% endblock %}				
+	      <li class="nav-item active">
+{% endblock %}
 
 {% block banner_title %}
             Course
-{% endblock %}    
+{% endblock %}
 
-{% block body_content %}        
-        <div class="content-fade container mb-5">                
-		{% for ClassName in ClassNames %}
-		<div class="hideme row bg-faded rounded m-0 mb-4">
-                  <div class="col-12 pt-4 pb-4">
-				<h3>{{ClassName.name}}</h3>
-			</div>
-                  <div class="col-lg-6 col-md-6 col-sm-12 pb-4">
-				<h5>Lecture</h5>
-                    	<table class="course_table">
-				{% for course in ClassName.course_set.all reversed %}
-				{% if course.handout_type == 'LC' %}
-			      <tr><td class="course_head">{{course.date}}</td>
-                            <td>
-				    	  {% if course.handout %}
-				    	  <a href="{{course.handout.url}}" target="_blank">
-				    	  	{{course.title}}
-					  </a>
-					  {% else %}
-				    	  	{{course.title}}
-					  {% endif %}
-				    </td>
-				</tr>
-				{% endif %}
-				{% endfor %}
-                        </table>
-			</div>
-                  <div class="col-lg-6 col-md-6 col-sm-12 pb-4">
-				<h5>Appendix</h5>
-                    	<table class="course_table">
-				{% for course in ClassName.course_set.all reversed %}
-				{% if course.handout_type == 'AP' %}
-			      <tr>
-                            <td>
-				    	  {% if course.handout %}
-				    	  <a href="{{course.handout.url}}" target="_blank">
-				    	  	{{course.title}}
-					  </a>
-					  {% else %}
-				    	  	{{course.title}}
-					  {% endif %}
-				    </td>
-				</tr>
-				{% endif %}
-				{% endfor %}
-                        </table>
-			</div>
-		</div>
-		{% endfor %}
-        </div>   
+{% block body_content %}
+        <div class="content-fade container mb-5">
+            <div id="app"></div>
+            <script src='{% static "js/app/course.js" %}'></script>      
+        </div>
 {% endblock %}

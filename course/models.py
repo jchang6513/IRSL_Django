@@ -34,8 +34,7 @@ class Course(models.Model):
 	)
 
 	class Meta:
-		ordering = ['class_name','-date']
-
+		ordering = ['class_name','-date']		
 
 	def __str__(self):
 		return self.title
