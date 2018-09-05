@@ -24,6 +24,7 @@ from home.views import home
 from intro.views import intro
 from news.views import news
 from member.views import member
+from course.views import ClassNameViewSet, CourseViewSet
 from course.views import course
 from publication.views import pub
 from achiev.views import achiev
@@ -34,6 +35,8 @@ from link.views import link
 
 router = DefaultRouter()
 router.register(r'link', LinkViewSet)
+router.register(r'class', ClassNameViewSet)
+router.register(r'course', CourseViewSet)
 
 urlpatterns = [
     path('', home),
