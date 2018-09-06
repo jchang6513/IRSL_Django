@@ -47,7 +47,7 @@ h3 {
 }
 
 .react-sanfona-item-expanded .react-sanfona-item-title {
-  background-color: var(--color-primary);
+  background-color: #191970;
   color: #fff;
 
   .title-done-btn {
