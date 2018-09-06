@@ -39,9 +39,8 @@ router.register(r'class', ClassNameViewSet)
 router.register(r'course', CourseViewSet)
 
 urlpatterns = [
-    path('', home),
+    path('', home, name='home'),
     path('admin/', admin.site.urls),
-    path('index/', home, name='home'),
     path('introduction/', intro, name='intro'),
     path('news/', news, name='news'),
     path('member/', member, name='member'),

@@ -2,57 +2,59 @@
 {% load staticfiles %}
 
 {% block title %}
-        <title>Link - IRSL</title>
+    <title>Link - IRSL</title>
 {% endblock %}
 
 {% block head_meta %}
-        <meta property="og:title" content="Link - IRSL"/>
-        <meta property="og:title" content="相關連結 - IRSL" />
-        <meta property="og:url" content="http://irsl.ss.ncu.edu.tw/link/"/>
-        <style>
-            .card-link {
-                margin-left: 1rem !important;
-                margin-right: 1rem !important;
-            }
+    <meta property="og:title" content="Link - IRSL"/>
+    <meta property="og:title" content="相關連結 - IRSL" />
+    <meta property="og:url" content="http://irsl.ss.ncu.edu.tw/link/"/>
+{% endblock %}
 
-            .user-card-header {
-                height: 70% !important;
-                background-color: white !important;
-            }
+{% block stylesheet %}
+    <style>
+        .card-link {
+            margin-left: 1rem !important;
+            margin-right: 1rem !important;
+        }
 
-            .user-card-body {
-                padding-top: 1.5rem !important;
-            }
+        .user-card-header {
+            height: 70% !important;
+            background-color: white !important;
+        }
 
-            .card-container {
-              display: flex;
-              flex-flow: row;
-              flex-wrap: wrap;
-              justify-content: center;
-              align-items: center;
-              width: 100%;
-              box-sizing: border-box;
-              @media screen and (max-width: 768px) {
-                flex-flow: column;
-              }
-            }
+        .user-card-body {
+            padding-top: 1.5rem !important;
+        }
 
-        </style>
+        .card-container {
+          display: flex;
+          flex-flow: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          box-sizing: border-box;
+          @media screen and (max-width: 768px) {
+            flex-flow: column;
+          }
+        }
+    </style>
 {% endblock %}
 
 {% block link_state%}
-	<li class="nav-item active">
+	 <li class="nav-item active">
 {% endblock %}
 
 {% block banner_title %}
-      Link
+    Link
 {% endblock %}
 
 {% block body_content %}
-        <div class="content-fade container col-11">
-            <div class="row-link row text-center">
-                <div class="mb-3" id="app"></div>
-                <script src='{% static "js/app/list.js" %}' type="text/javascript"></script>
-            </div>
+    <div class="content-fade container col-lg-9">
+        <div class="row-link row text-center">
+            <div class="mb-3" id="app"></div>
+            <script src='{% static "js/app/list.js" %}' type="text/javascript"></script>
         </div>
+    </div>
 {% endblock %}
