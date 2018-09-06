@@ -6,10 +6,12 @@
 {% endblock %}
 
 {% block head_meta %}
-        <meta property="og:title" content="Course - IRSL"/>
-        <meta property="og:title" content="課程講義 - IRSL" />
-        <meta property="og:url" content="http://irsl.ss.ncu.edu.tw/course/"/>
-        <link rel="stylesheet" type="text/css" href='{% static "css/course.css" %}'>
+    <meta property="og:title" content="Course - IRSL"/>
+    <meta property="og:title" content="課程講義 - IRSL" />
+    <meta property="og:url" content="http://irsl.ss.ncu.edu.tw/course/"/>
+{% endblock %}
+{% block stylesheet %}
+    <link rel="stylesheet" type="text/css" href='{% static "css/course.css" %}'>
 {% endblock %}
 
 {% block course_state %}
@@ -23,6 +25,6 @@
 {% block body_content %}
         <div class="content-fade container mb-5">
             <div id="app"></div>
-            <script src='{% static "js/app/course.js" %}'></script>      
+            <script src='{% static "js/app/course.js" %}'></script>
         </div>
 {% endblock %}

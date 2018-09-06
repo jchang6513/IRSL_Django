@@ -48,54 +48,30 @@ a:visited {
     color: darkslategray;
 }
 
-
-
 .jyliu p {
     font-weight: bold;
 }
 
 hr.s2{
-
     border: 0;
-
     height: 1px;
-
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
-
 }
-
-
 
 hr.s3{
-
     border: 0;
-
     height: 1px;
-
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-
 }
-
-
-
-.navbar .bg-faded {
-    background-color: 1;
-}
-
-
 
 .navbar .container{
     width: 80vw;
 }
 
-
-
 .navbar-brand{
     position: relative;
     padding: 0;
 }
-
-
 
 .navbar-brand img{
     position: relative;
@@ -103,29 +79,16 @@ hr.s3{
     height: 40px;
 }
 
-
-
 .nav-link{
-
     font-family: "GudeaR" !important;
-
 }
-
-
 
 .navbar #navbarNav {
-
     color: black;
-
     text-align: center;
-
     font-size: 17px;
-
     font-weight: bold;
-
 }
-
-
 
 .navbar .navbar-toggler {
     border: none;
