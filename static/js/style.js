@@ -34,7 +34,7 @@ $(document).on('scroll', function (e) {
       $(".navbar").addClass("navbar-inverse");
       $(".navbar").addClass("bg-inverse");
       $(".navbar-logo").attr("src","/static/images/irsl_h_w.png")
-      $(".hamburger").addClass("hamburger-light");
+      $(".hamburger").removeClass("hamburger-light");      
     } else {
       console.log('white')
       $(".navbar").removeClass("navbar-inverse");
@@ -42,6 +42,6 @@ $(document).on('scroll', function (e) {
       $(".navbar").addClass("navbar-faded");
       $(".navbar").addClass("bg-faded");
       $(".navbar-logo").attr("src","/static/images/irsl_h_b.png")
-      $(".hamburger").removeClass("hamburger-light");
+      $(".hamburger").addClass("hamburger-light");
     }
 });
