@@ -17,6 +17,9 @@ body{
     font-family: "Helvetica Neue", Helvetica, Arial, "微軟正黑體", "微软雅黑", sans-serif;
 }
 
+::-webkit-scrollbar {
+}
+
 button:focus {outline:0;}
 
 h2, h3, h4, h5{
@@ -67,7 +70,7 @@ hr.s3{
 
 .navbar-brand img{
     position: relative;
-    top: -2px;
+    top: -3px;
     height: 40px;
 }
 
@@ -95,19 +98,19 @@ hr.s3{
 
 .jumbotron {
     overflow: hidden;
-  	background-size: cover;
-  	background: url(/static/images/jumbotron/small_1.jpg) no-repeat center,
-        				url(/static/images/jumbotron/small_2.jpg) no-repeat center,
-        				url(/static/images/jumbotron/small_3.jpg) no-repeat center,
-        				url(/static/images/jumbotron/small_4.jpg) no-repeat center,
-        				url(/static/images/jumbotron/small_5.jpg) no-repeat center,
-        				url(/static/images/jumbotron/small_6.jpg) no-repeat center,
-        				url(/static/images/jumbotron/small_7.jpg) no-repeat center,
-        				url(/static/images/jumbotron/small_8.jpg) no-repeat center,
-        				url(/static/images/jumbotron/small_9.jpg) no-repeat center,
-        				url(/static/images/jumbotron/small_10.jpg) no-repeat center,
-        				url(/static/images/jumbotron/small_11.jpg) no-repeat center;
-  	border-radius: 0px;
+    background-size: cover;
+	/* background: url(/static/images/jumbotron/small_1.jpg) no-repeat center,
+				url(/static/images/jumbotron/small_2.jpg) no-repeat center,
+				url(/static/images/jumbotron/small_3.jpg) no-repeat center,
+				url(/static/images/jumbotron/small_4.jpg) no-repeat center,
+				url(/static/images/jumbotron/small_5.jpg) no-repeat center,
+				url(/static/images/jumbotron/small_6.jpg) no-repeat center,
+				url(/static/images/jumbotron/small_7.jpg) no-repeat center,
+				url(/static/images/jumbotron/small_8.jpg) no-repeat center,
+				url(/static/images/jumbotron/small_9.jpg) no-repeat center,
+				url(/static/images/jumbotron/small_10.jpg) no-repeat center,
+				url(/static/images/jumbotron/small_11.jpg) no-repeat center; */
+    border-radius: 0px;
     padding: 0;
 }
 
