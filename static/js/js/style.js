@@ -12,20 +12,18 @@ $(function() {
 
 $(document).on('scroll', function (e) {
     if ($(document).scrollTop() > $('.jumbotron').height()) {
-      console.log('1,black')
+	  $(".navbar-logo").attr("src","/static/images/irsl_h_w.png")
       $(".navbar").removeClass("navbar-light");
       $(".navbar").removeClass("bg-faded");
       $(".navbar").addClass("navbar-inverse");
-      $(".navbar").addClass("bg-inverse");
-      $(".navbar-logo").attr("src","/static/images/irsl_h_w.png")
+      $(".navbar").addClass("bg-inverse");      
       $(".hamburger").removeClass("hamburger-light");
     } else {
-      console.log('white')
+	  $(".navbar-logo").attr("src","/static/images/irsl_h_b.png")
       $(".navbar").removeClass("navbar-inverse");
       $(".navbar").removeClass("bg-inverse");
       $(".navbar").addClass("navbar-light");
-      $(".navbar").addClass("bg-faded");
-      $(".navbar-logo").attr("src","/static/images/irsl_h_b.png")
+      $(".navbar").addClass("bg-faded");      
       $(".hamburger").addClass("hamburger-light");
     }
 });
