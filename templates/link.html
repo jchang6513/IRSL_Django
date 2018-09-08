@@ -14,8 +14,8 @@
 {% block stylesheet %}
     <style>
         .card-link {
-            margin-left: 1rem !important;
-            margin-right: 1rem !important;
+            margin-right: 0!important;
+            margin-left: 0!important;
         }
 
         .user-card-header {
@@ -25,19 +25,6 @@
 
         .user-card-body {
             padding-top: 1.5rem !important;
-        }
-
-        .card-container {
-          display: flex;
-          flex-flow: row;
-          flex-wrap: wrap;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-          box-sizing: border-box;
-          @media screen and (max-width: 768px) {
-            flex-flow: column;
-          }
         }
     </style>
 {% endblock %}
@@ -51,10 +38,9 @@
 {% endblock %}
 
 {% block body_content %}
-    <div class="content-fade container col-lg-9">
-        <div class="row-link row text-center">
-            <div class="mb-3" id="app"></div>
-            <script src='{% static "js/app/link.js" %}' type="text/javascript"></script>
-        </div>
+    <div class="content-fade container col-lg-10">
+        <div class="mb-3" id="app"></div>
+        <script src='{% static "js/app/link.js" %}' type="text/javascript"></script>
+        <!-- <script src='http://localhost:8080/app/link.js' type="text/javascript"></script> -->
     </div>
 {% endblock %}
