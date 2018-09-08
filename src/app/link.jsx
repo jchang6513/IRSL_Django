@@ -36,7 +36,6 @@ class App extends React.Component {
 
     render() {
       const { error, isLoaded, links } = this.state;
-      console.log(links)
       if (error) {
         return <div>Error: {error.message}</div>;
       } else if (!isLoaded) {
