@@ -1,25 +1,25 @@
 {% extends 'base.html' %}
 {% load staticfiles%}
 
-{% block head_title %}        
+{% block head_title %}
 	Publication - IRSL
-{% endblock %}        
+{% endblock %}
 
-{% block head_meta %}    
+{% block head_meta %}
 	<meta property="og:title" content="Publication - IRSL"/>
 	<meta property="og:title" content="期刊著作 - IRSL" />
 	<meta property="og:url" content="http://irsl.ss.ncu.edu.tw/publication/"/>
 {% endblock %}
 
-{% block pub_state %} 
+{% block pub_state %}
 	<li class="nav-item active">
-{% endblock %}	  
+{% endblock %}
 
 {% block banner_title%}
 	Publication
 {% endblock %}
 
-{% block body_content %}        
+{% block body_content %}
 	<div class="content-fade container mb-5">
 		<div class="row">
 			<div class="col align-self-center text-left">
@@ -32,7 +32,7 @@
 					<div id="scrollArea" class="clusterize-scroll">
 						<div id="contentArea" class="clusterize-content">
 							<div class="clusterize-no-data">
-								<p> {{inter.NO}} </p>
+								<p> {{inter.year}}.{{inter.no}} </p>
 								{% if inter.paper %}
 									<a href="{{inter.paper.url}}" target="_blank">
 								{% else %}
@@ -41,18 +41,18 @@
 										<p> {{inter.author}} </p>
 										<p> {{inter.title}} </p>
 									</a>
-								<hr class="s1"><br>								
+								<hr class="s1"><br>
 							</div>
 						</div>
 					</div>
 				{% endfor %}
 				<br/>
 
-				<h3>國內期刊</h3>                    
+				<h3>國內期刊</h3>
 				<br>
 				{% for domes in domess %}
 					<div class="hideme">
-					<p> {{domes.NO}} </p>
+					<p> {{domes.year}}.{{domes.no}} </p>
 					{% if domes.paper %}
 						<a href="/media/{{domes.paper}}" target="_blank">
 					{% else %}
@@ -69,7 +69,7 @@
 				<br>
 				{% for book in books %}
 					<div class="hideme">
-					<p> {{book.NO}} </p>
+					<p> {{book.year}}.{{book.no}} </p>
 					{% if book.paper %}
 						<a href="/media/{{book.paper}}" target="_blank">
 					{% else %}
