@@ -42,10 +42,10 @@ class App extends React.Component {
         return <div>Loading...</div>;
       } else {
         return (
-          <div className="row-link row text-center">
+          <div className="row d-flex justify-content-around">
             {links.map(link => (
                   <UserCard
-                    cardClass='float'
+                    cardClass='flex'
                     href={link.link}
                     header={link.img}
                     name={link.chinese}
