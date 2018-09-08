@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 class Publication_List(models.Model):
-	List = models.FileField(null=True, blank=True,upload_to='paper/');
+	List = models.FileField(null=True,upload_to='paper/');
 
 	class Meta:
 		verbose_name = 'Publications List'
@@ -12,9 +12,9 @@ class Publication_List(models.Model):
 class International(models.Model):
 	year   = models.IntegerField();
 	no     = models.IntegerField();
-	author = models.TextField(blank=True);
-	title  = models.TextField(blank=True);
-	paper  = models.FileField(null=True, blank=True,upload_to='paper/');
+	author = models.TextField();
+	title  = models.TextField();
+	paper  = models.FileField(null=True,upload_to='paper/');
 
 	class Meta:
 		ordering = ['-no']
@@ -25,9 +25,9 @@ class International(models.Model):
 class Domestic(models.Model):
 	year   = models.IntegerField();
 	no     = models.IntegerField();
-	author = models.TextField(blank=True);
-	title = models.TextField(blank=True);
-	paper = models.FileField(null=True, blank=True,upload_to='paper/');
+	author = models.TextField();
+	title = models.TextField();
+	paper = models.FileField(null=True,upload_to='paper/');
 
 	class Meta:
 		ordering = ['-no']
@@ -38,9 +38,9 @@ class Domestic(models.Model):
 class Book(models.Model):
 	year   = models.IntegerField();
 	no     = models.IntegerField();
-	author = models.TextField(blank=True);
-	title = models.TextField(blank=True);
-	paper = models.FileField(null=True, blank=True,upload_to='paper/');
+	author = models.TextField();
+	title = models.TextField();
+	paper = models.FileField(null=True,upload_to='paper/');
 
 	class Meta:
 		ordering = ['-no']
