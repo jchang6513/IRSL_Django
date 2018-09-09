@@ -26,7 +26,7 @@ from news.views import news
 from member.views import member
 from course.views import ClassNameViewSet, CourseViewSet
 from course.views import course
-from publication.views import InternationalViewSet, DomesticViewSet, BookViewSet
+from publication.views import PListViewSet, InternationalViewSet, DomesticViewSet, BookViewSet
 from publication.views import pub
 from achiev.views import achiev
 from conference.views import conf
@@ -38,6 +38,7 @@ router = DefaultRouter()
 router.register(r'link', LinkViewSet)
 router.register(r'class', ClassNameViewSet)
 router.register(r'course', CourseViewSet)
+router.register(r'publications', PListViewSet)
 router.register(r'international', InternationalViewSet)
 router.register(r'domestic', DomesticViewSet)
 router.register(r'book', BookViewSet)

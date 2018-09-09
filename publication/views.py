@@ -5,8 +5,13 @@ from rest_framework import viewsets, permissions
 from django.http import HttpResponse
 import os
 
-from .serializers import InternationaleSerializer, DomesticSerializer, BookSerializer
+from .serializers import PListSerializer, InternationaleSerializer, DomesticSerializer, BookSerializer
 from .models import Publication_List, International, Domestic, Book
+
+class PListViewSet(viewsets.ModelViewSet):
+    queryset = Publication_List.objects.all().order_by('-id')
+    serializer_class = PListSerializer
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
 
 class InternationalViewSet(viewsets.ModelViewSet):
     queryset = International.objects.all().order_by('-no')
