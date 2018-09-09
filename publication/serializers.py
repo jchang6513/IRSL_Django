@@ -1,5 +1,11 @@
 from rest_framework import serializers
-from .models import International, Domestic, Book
+from .models import Publication_List, International, Domestic, Book
+
+class PListSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Publication_List
+        order_by = (('-id',))
+        fields = '__all__'
 
 class InternationaleSerializer(serializers.ModelSerializer):
     class Meta:

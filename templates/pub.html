@@ -11,6 +11,65 @@
 	<meta property="og:url" content="http://irsl.ss.ncu.edu.tw/publication/"/>
 {% endblock %}
 
+{% block stylesheet %}
+    <style>
+			.react-tagsinput {
+			  background-color: #fff;
+			  border: 1px solid #ccc;
+			  overflow: hidden;
+				padding-left: 5px;
+			  padding-top: 5px;
+			}
+
+			.react-tagsinput-tag {
+			  background-color: #2E86C1;
+			  border-radius: 2px;
+			  border: 1px solid #2874A6;
+			  color: white;
+			  display: inline-block;
+			  font-family: sans-serif;
+			  font-size: 130%;
+			  font-weight: 200;
+				margin-bottom: 5px;
+			  margin-right: 5px;
+			  padding: 5px;
+			}
+
+			.react-tagsinput-remove {
+			  cursor: pointer;
+			  font-weight: bold;
+			}
+
+			.react-tagsinput-tag a::before {
+			  content: " x";
+			}
+
+			.react-tagsinput-input {
+			  background: transparent;
+			  border: 0;
+			  color: #777;
+			  font-family: sans-serif;
+			  font-size: 130%;
+			  font-weight: 200;
+			  margin-bottom: 6px;
+			  margin-top: 1px;
+			  outline: none;
+			  padding: 5px;
+			  width: 80px;
+			}
+
+			@media only screen and (max-width : 700px) {
+				.react-tagsinput-tag {
+					font-size: 100%;
+				}
+				.react-tagsinput-input {
+					font-size: 100%;
+				}
+			}
+		</style>
+{% endblock %}
+
+
 {% block pub_state %}
 	<li class="nav-item active">
 {% endblock %}
@@ -23,63 +82,9 @@
 	<div class="content-fade container mb-5">
 		<div class="row">
 			<div class="col align-self-center text-left">
-				<h3><a href="{{plist.List.url}}" target="_blank">Publication List<a></h3>
-				<br/>
-
-				<h3>國際期刊</h3>
-				<br>
-				{% for inter in inters %}
-					<div id="scrollArea" class="clusterize-scroll">
-						<div id="contentArea" class="clusterize-content">
-							<div class="clusterize-no-data">
-								<p> {{inter.year}}.{{inter.no}} </p>
-								{% if inter.paper %}
-									<a href="{{inter.paper.url}}" target="_blank">
-								{% else %}
-									<a href="" target="_blank">
-								{% endif %}
-										<p> {{inter.author}} </p>
-										<p> {{inter.title}} </p>
-									</a>
-								<hr class="s1"><br>
-							</div>
-						</div>
-					</div>
-				{% endfor %}
-				<br/>
-
-				<h3>國內期刊</h3>
-				<br>
-				{% for domes in domess %}
-					<div class="hideme">
-					<p> {{domes.year}}.{{domes.no}} </p>
-					{% if domes.paper %}
-						<a href="/media/{{domes.paper}}" target="_blank">
-					{% else %}
-						<a href="" target="_blank">
-					{% endif %}
-							<p> {{domes.author}} </p>
-							<p> {{domes.title}} </p>
-						</a>
-					<hr class="s1"><br></div>
-				{% endfor %}
-				<br/>
-
-				<h3>專書</h3>
-				<br>
-				{% for book in books %}
-					<div class="hideme">
-					<p> {{book.year}}.{{book.no}} </p>
-					{% if book.paper %}
-						<a href="/media/{{book.paper}}" target="_blank">
-					{% else %}
-						<a href="" target="_blank">
-					{% endif %}
-							<p> {{book.author}} </p>
-							<p> {{book.title}} </p>
-						</a>
-					<hr class="s1"><br></div>
-				{% endfor %}
+				<div id="app"></div>
+				<script src='{% static "js/app/pub.js" %}'></script>
+				<!-- <script src='http://localhost:8080/app/pub.js' type="text/javascript"></script> -->
 			</div>
 		</div>
 	</div>
