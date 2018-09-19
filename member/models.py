@@ -12,8 +12,7 @@ class JYLiu_CV(models.Model):
 class Member(models.Model):
 	english = models.CharField(max_length=30)
 	chinese = models.CharField(max_length=10)
-#	thumb = models.ImageField(upload_to = 'member_thumbnails/', default = 'member_thumbnails/member_thumb.png')
-	thumb = models.FileField(blank=True, upload_to='paper/', default='member_thumbnails/member_thumb.png');
+	thumb = models.FileField(blank=True, upload_to='member_thumbnails/', default='member_thumbnails/member_thumb.png');
 	IDENTITY = (
 		('PD','Postdoctoral'),
 		('FA','Full-time Assistant'),

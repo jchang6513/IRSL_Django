@@ -1,11 +1,5 @@
 from django.contrib import admin
-
-# Register your models here.
-
-from .models import JYLiu_CV
-from .models import Member
-from .models import Past
-from .models import Graduate
+from .models import JYLiu_CV, Member, Past, Graduate
 
 class memberAdmin(admin.ModelAdmin):
     list_display = ('english', 'chinese', 'identity')
