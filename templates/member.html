@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load staticfiles %}
 
 {% block head_title %}
 	Member - IRSL
@@ -40,7 +41,10 @@
 
 {% block body_content %}
         <div class="content-fade container member mb-5">
-            <div class="hideme jyliu yliu row hidden-md-down">
+						<div id="app"></div>
+						<!-- <script src='{% static "js/app/course.js" %}'></script> -->
+						<script src="http://localhost:8080/app/member.js"></script>
+            <!-- <div class="hideme jyliu yliu row hidden-md-down">
                 <div class="col-lg-4 col-md-12 align-self-left pb-5">
                     <img src="/static/images/jyliu.png" width=270px>
                 </div>
@@ -186,6 +190,6 @@
 			  	{% endfor %}
                     </table>
                 </div>
-            </div>
+            </div> -->
         </div>
 {% endblock %}
