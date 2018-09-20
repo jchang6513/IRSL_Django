@@ -16,6 +16,7 @@ class App extends React.Component {
           domes: [],
           books: [],
           tags: [],
+          placeholder: 'Search...',
         };
     }
 
@@ -89,6 +90,11 @@ class App extends React.Component {
 
     handleChange = (tags) => {
       this.setState({tags})
+      if (tags.length == 0) {
+        this.setState({placeholder: 'Search...'})
+      } else {
+        this.setState({placeholder: 'Add a tag'})
+      }
     }
 
     RenderInput = (props) => {
@@ -117,12 +123,16 @@ class App extends React.Component {
           <div id="scrollArea" class="clusterize-scroll">
             <div className="row">
               <div className="col-lg-8 col-sm-12 mb-2">
+                <div>
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                </div>
                 <TagsInput
                   value={this.state.tags}
                   onChange={this.handleChange}
+                  className='react-tagsinput'
                   addKeys={[13,32]}
                   onlyUnique={true}
-                  inputProps={{className: 'react-tagsinput-input',placeholder: 'Search'}}
+                  inputProps={{className: 'react-tagsinput-input',placeholder: this.state.placeholder}}
                   renderInput={this.RenderInput}
                 />
               </div>
