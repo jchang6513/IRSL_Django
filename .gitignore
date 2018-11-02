@@ -111,3 +111,5 @@ uwsgi.ini
 uwsgi_params
 nginx.conf
 update.sh
+
+node_modules
