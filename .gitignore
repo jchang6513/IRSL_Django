@@ -1,9 +1,7 @@
+db.sqlite3*
+Dockerfile
 static_cdn
 media
-irslSITE_nginx.conf
-irslSITE_uwsgi.ini
-uwsgi_params
-uwsgi.ini
 __pycache__/
 
 # Byte-compiled / optimized / DLL files
@@ -113,3 +111,5 @@ uwsgi.ini
 uwsgi_params
 nginx.conf
 update.sh
+
+node_modules

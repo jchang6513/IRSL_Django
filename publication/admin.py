@@ -5,8 +5,8 @@ from django.contrib import admin
 from .models import Publication_List, International, Domestic, Book
 
 class pubAdmin(admin.ModelAdmin):
-    list_display = ('NO', 'author', 'title')
-    list_display_links = ('NO', 'author', 'title')
+    list_display = ('no', 'year', 'author', 'title')
+    list_display_links = ('no', 'year', 'author', 'title')
     search_fields = ('author', 'title')
     list_per_page = 50
 

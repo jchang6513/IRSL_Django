@@ -15,7 +15,6 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
@@ -24,12 +23,11 @@ SECRET_KEY = 'j7+dgnag7y5g$+lh+4bd0bnhs%96%oz*z8jo*lke(u=r_e1j+1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-#DEBUG = False
+# DEBUG = False
 
 ALLOWED_HOSTS = ['irsl.ss.ncu.edu.tw',
-				 'localhost',
-				]
-
+                 'localhost',
+                ]
 
 # Application definition
 
@@ -47,7 +45,7 @@ INSTALLED_APPS = [
     'publication',
     'conference',
     'research',
-	'link',
+    'link',
 ]
 
 MIDDLEWARE = [

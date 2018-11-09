@@ -9,24 +9,40 @@
         <meta property="og:title" content="實驗室成員 - IRSL" />
         <meta property="og:url" content="http://www.ss.ncu.edu.tw/~jyliu/news.html" />
 				<style>
-						.card-columns {
-								column-count: 4 !important;
-						}
-						@media only screen and (max-width : 1000px) {
-								.card-columns {
-										column-count: 3 !important;
-								}
-						}
-						@media only screen and (max-width : 700px) {
-								.card-columns {
-										column-count: 2 !important;
-								}
-						}
-						@media only screen and (max-width : 580px) {
-								.card-columns {
-										column-count: 1 !important;
-								}
-						}
+                        .members{                            
+                            display: grid;
+                            grid-template-columns: 1fr 1fr 1fr 1fr;
+                            grid-auto-flow: row;
+                            -ms-grid-columns: 1fr 1fr 1fr 1fr;
+                        }
+                        .members .profile-card{
+                            display:inline-block;
+                            width: 20%\0;
+                        }
+                        @media only screen and (max-width : 991px) {
+							.members{
+                                display: -ms-grid;
+                                display: grid;
+                                grid-template-columns: 1fr 1fr 1fr;
+                                -ms-grid-column: 1fr 1fr 1fr;
+                            }
+                        }
+                        @media only screen and (max-width : 700px) {
+							.members{
+                                display: -ms-grid;
+                                display: grid;
+                                grid-template-columns: 1fr 1fr;
+                                -ms-grid-column: 1fr 1fr;
+                            }
+						}  
+                        @media only screen and (max-width : 580px) {
+							.members{
+                                display: -ms-grid;
+                                display: grid;
+                                grid-template-columns: 1fr;
+                                -ms-grid-column: 1fr;
+                            }
+						}                        
 				</style>
 {% endblock %}
 
@@ -39,7 +55,7 @@
 {% endblock %}
 
 {% block body_content %}
-        <div class="content-fade container member mb-5">
+        <div class="content-fade container member pt-3 mb-5">
             <div class="hideme jyliu yliu row hidden-md-down">
                 <div class="col-lg-4 col-md-12 align-self-left pb-5">
                     <img src="/static/images/jyliu.png" width=270px>
@@ -72,19 +88,19 @@
                 </div>
             </div>
             <br><br>
-						<div class="card-columns text-center">
-								{% for mi in members %}
-										<div class="hideme card text-center mx-auto mb-4" style="max-width: 200px; border: none;">
-											  <img class="card-img-top rounded-circle mx-auto" src="/media/{{mi.thumb}}" alt="Card image cap" style="height: 150px ;width: 150px; object-fit: cover;">
-											  <div class="card-body py-3">
-											    	<h5 class="card-title py-0">{{mi.english}}</h5>
-												<h5 class="card-title py-0">{{mi.chinese}}</h5>
-												<p class="card-text py-0">{{mi.get_identity_display}}</p>
-												<p class="card-text py-0">{{mi.email}}</p>
-											  </div>
-										</div>
-								{% endfor %}
-					  </div>
+            <div class="members text-center">
+                {% for mi in members %}
+                    <div class="profile-card hideme text-center mx-auto mb-4">
+                        <img class="rounded-circle mx-auto" src="/media/{{mi.thumb}}" style="height: 150px ;width: 150px; object-fit: cover;">
+                        <div class="py-3">
+                            <h5 class="py-0">{{mi.english}}</h5>
+                            <h5 class="py-0">{{mi.chinese}}</h5>
+                            <p class="py-0">{{mi.get_identity_display}}</p>
+                            <p class="py-0">{{mi.email}}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
 
             <br><br>
             <div class="hideme vp row hidden-sm-down">
