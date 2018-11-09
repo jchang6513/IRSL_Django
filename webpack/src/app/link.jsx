@@ -1,3 +1,6 @@
+import "isomorphic-fetch";
+import 'core-js/fn/promise';
+
 import React from 'react';
 import { render } from 'react-dom';
 import { UserCard } from 'react-ui-cards';
@@ -42,14 +45,15 @@ class App extends React.Component {
         return <div>Loading...</div>;
       } else {
         return (
-          <div className="d-flex flex-wrap justify-content-around">
-            {links.map(link => (
+          <div className="d-flex flex-wrap justify-content-between">
+            {links.map((link, i)  => (
                   <UserCard
                     cardClass='float'
                     href={link.link}
                     header={link.img}
                     name={link.chinese}
                     positionName={link.english}
+                    key={i}
                   />
             ))}
           </div>
