@@ -1,3 +1,6 @@
+import "isomorphic-fetch";
+import 'core-js/fn/promise';
+
 import React from 'react';
 import { render } from 'react-dom';
 import { Accordion, AccordionItem } from 'react-sanfona';
@@ -64,40 +67,44 @@ class App extends React.Component {
       } else {
         return (
           <Accordion allowMultiple={true}>
-            {classes.map(cl => {
+            {classes.map((cl, j) => {
               imap ++
               return (
-                <AccordionItem title={cl.name} expanded={imap === 1}>
+                <AccordionItem title={cl.name} expanded={imap === 1} key={j}>
                   <div className="row m-0">
                       <div className="col-lg-6 col-md-6 col-sm-12 pb-4">
                           <h5>Lecture</h5>
-                          {cl.lectures.map(course => {
+                          {cl.lectures.map((course, i) => {
                               return (
-                                	<table class="course_table">
+                                	<table className="course_table" key={i}>
+                                    <tbody>
                                 			<tr>
-                                  				<td class="course_left">{course.date}</td>
+                                  				<td className="course_left">{course.date}</td>
                                           {course.handout ? (
-                                              <td class="course_right"><a href={course.handout} target="_blank">{course.title}</a></td>
+                                              <td className="course_right"><a href={course.handout} target="_blank">{course.title}</a></td>
                                           ) : (
-                                              <td class="course_right">{course.title}</td>
+                                              <td className="course_right">{course.title}</td>
                                           )}
                                 			</tr>
+                                    </tbody>
                                 	</table>
                               );
                           })}
                       </div>
                       <div className="col-lg-6 col-md-6 col-sm-12 pb-4">
                           <h5>Apendix</h5>
-                          {cl.appendices.map(course => {
+                          {cl.appendices.map((course, i) => {
                             return (
-                              	<table class="course_table">
+                              	<table className="course_table" key={i}>
+                                  <tbody>
                               			<tr>
                                         {course.handout ? (
-                                            <td class="course_right"><a href={course.handout} target="_blank">{course.title}</a></td>
+                                            <td className="course_right"><a href={course.handout} target="_blank">{course.title}</a></td>
                                         ) : (
-                                            <td class="course_right">{course.title}</td>
+                                            <td className="course_right">{course.title}</td>
                                         )}
                               			</tr>
+                                  </tbody>
                               	</table>
                             );
                           })}

@@ -1,3 +1,6 @@
+import "isomorphic-fetch"
+import 'core-js/fn/promise';
+
 import React from 'react';
 import { render } from 'react-dom';
 import TagsInput from 'react-tagsinput'
@@ -85,7 +88,6 @@ class App extends React.Component {
             });
           }
         )
-
     }
 
     handleChange = (tags) => {
@@ -120,11 +122,11 @@ class App extends React.Component {
         return (<div>Loading...</div>);
       } else {
         return (
-          <div id="scrollArea" class="clusterize-scroll">
+          <div className="clusterize-scroll">
             <div className="row">
               <div className="col-lg-8 col-sm-12 mb-2">
                 <div>
-                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                <span className="glyphicon glyphicon-search" aria-hidden="true"></span>
                 </div>
                 <TagsInput
                   value={this.state.tags}
@@ -143,10 +145,10 @@ class App extends React.Component {
 
             <br/>
             <h3>國際期刊</h3>
-            <div id="contentArea" class="clusterize-content">
-              {fInters.map(paper => {
+            <div className="clusterize-content">
+              {fInters.map((paper, i) => {
                 return (
-                  <div class="clusterize-no-data">
+                  <div className="clusterize-no-data" key={i}>
                     <br/>
                     <p> {paper.year}.{paper.no} </p>
                     {paper.paper ? (
@@ -154,7 +156,7 @@ class App extends React.Component {
                     ) : (
                       <div><p>{paper.author}</p><p>{paper.title}</p></div>
                     )}
-                    <hr class="s1"/>
+                    <hr className="s1"/>
                   </div>
                 );
               })}
@@ -162,10 +164,10 @@ class App extends React.Component {
 
             <br/>
             <h3>國內期刊</h3>
-            <div id="contentArea" class="clusterize-content">
-              {fDomes.map(paper => {
+            <div className="clusterize-content">
+              {fDomes.map((paper, i) => {
                 return (
-                  <div class="clusterize-no-data">
+                  <div className="clusterize-no-data" key={i}>
                     <br/>
                     <p> {paper.year}.{paper.no} </p>
                     {paper.paper ? (
@@ -173,7 +175,7 @@ class App extends React.Component {
                     ) : (
                       <div><p>{paper.author}</p><p>{paper.title}</p></div>
                     )}
-                    <hr class="s1"/>
+                    <hr className="s1"/>
                   </div>
                 );
               })}
@@ -181,10 +183,10 @@ class App extends React.Component {
 
             <br/>
             <h3>專書</h3>
-            <div id="contentArea" class="clusterize-content">
-              {fBooks.map(paper => {
+            <div className="clusterize-content">
+              {fBooks.map((paper, i) => {
                 return (
-                  <div class="clusterize-no-data">
+                  <div className="clusterize-no-data" key={i}>
                     <br/>
                     <p> {paper.year}.{paper.no} </p>
                     {paper.paper ? (
@@ -192,7 +194,7 @@ class App extends React.Component {
                     ) : (
                       <div><p>{paper.author}</p><p>{paper.title}</p></div>
                     )}
-                    <hr class="s1"/>
+                    <hr className="s1"/>
                   </div>
                 );
               })}
